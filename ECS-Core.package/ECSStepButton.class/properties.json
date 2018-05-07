@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityProvider" ],
-	"name" : "ECSSystem",
+		"systemProvider" ],
+	"name" : "ECSStepButton",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "SimpleButtonMorph",
 	"type" : "normal" }

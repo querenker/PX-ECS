@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"systems",
+		"playground" ],
 	"name" : "ECSEssay",
 	"pools" : [
 		 ],

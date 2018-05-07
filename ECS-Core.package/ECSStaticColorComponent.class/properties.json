@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityProvider" ],
-	"name" : "ECSSystem",
+		"staticColor" ],
+	"name" : "ECSStaticColorComponent",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "ECSColorComponent",
 	"type" : "normal" }

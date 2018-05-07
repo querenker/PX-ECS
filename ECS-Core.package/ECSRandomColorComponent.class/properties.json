@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityProvider" ],
-	"name" : "ECSSystem",
+		 ],
+	"name" : "ECSRandomColorComponent",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "ECSColorComponent",
 	"type" : "normal" }
