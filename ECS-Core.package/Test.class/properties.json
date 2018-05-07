@@ -1,13 +1,13 @@
 {
-	"category" : "Counter-Core",
+	"category" : "ECS-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"currentValue" ],
-	"name" : "Counter",
+		 ],
+	"name" : "Test",
 	"pools" : [
 		 ],
 	"super" : "Object",
