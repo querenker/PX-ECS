@@ -1,3 +1,4 @@
 OrderedDictionary {
-	'ECS-Core.package' : #SquotCypressCodeSerializer
+	'ECS-Core.package' : #SquotCypressCodeSerializer,
+	'ECS-Presentation.package' : #SquotCypressCodeSerializer
 }
