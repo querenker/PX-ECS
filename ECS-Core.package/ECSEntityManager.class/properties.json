@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityMgr" ],
-	"name" : "ECSSystem",
+		"componentStore" ],
+	"name" : "ECSEntityManager",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addComponent:to:" : "AR 5/11/2018 09:25",
+		"componentStore" : "AR 5/10/2018 17:24",
+		"componentStore:" : "AR 5/10/2018 17:24",
+		"createEntity" : "AR 5/10/2018 17:21",
+		"entitiesWithComponentOfTyp:" : "AR 5/11/2018 09:23",
+		"entity:hasComponentOfType:" : "AR 5/10/2018 18:23",
+		"initialize" : "AR 5/10/2018 18:27" } }

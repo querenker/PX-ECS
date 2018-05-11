@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityMgr" ],
-	"name" : "ECSSystem",
+		"drawSurface" ],
+	"name" : "ECSRenderingSystem",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSSystem",
 	"type" : "normal" }

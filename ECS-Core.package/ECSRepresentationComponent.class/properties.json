@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityMgr" ],
-	"name" : "ECSSystem",
+		"color",
+		"position",
+		"extent" ],
+	"name" : "ECSRepresentationComponent",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSComponent",
 	"type" : "normal" }

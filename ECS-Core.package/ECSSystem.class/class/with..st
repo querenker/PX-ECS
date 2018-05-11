@@ -1,7 +1,7 @@
 as yet unclassified
-with: anEntityProvider
+with: anEntityManager
 
 	| instance |
 	instance := self new.
-	instance entityProvider: anEntityProvider.
+	instance entityMgr: anEntityManager.
 	^ instance

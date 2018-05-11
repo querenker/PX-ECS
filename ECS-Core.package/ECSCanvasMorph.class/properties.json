@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entityMgr" ],
-	"name" : "ECSSystem",
+		"drawBlock" ],
+	"name" : "ECSCanvasMorph",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Morph",
 	"type" : "normal" }
