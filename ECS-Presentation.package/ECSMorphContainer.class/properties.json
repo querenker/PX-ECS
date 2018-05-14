@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Presentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSMorphContainer",
+	"pools" : [
+		 ],
+	"super" : "PHWidget",
+	"type" : "normal" }
