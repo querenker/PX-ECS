@@ -16,8 +16,7 @@ initialize
 	
 	self
 		addSlide: (PHWidget new
-			add: (PHLabel heading: 'Midterm Presentation PX - ECS');
-			align: #(start center));
-		addSlide: (PHWidget new add: ECSPhenoEssay new).
+			add: (ECSOldEssay new)).
+	self addSlide: (PHWidget new add: ECSPhenoEssay new).
 		
 	self showFirstSlide
