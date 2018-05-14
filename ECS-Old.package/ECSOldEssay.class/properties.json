@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Old",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"systems",
+		"playground" ],
+	"name" : "ECSOldEssay",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

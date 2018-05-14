@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"type" : "AR 5/7/2018 14:48",
+		"with:" : "AR 5/7/2018 14:24" },
+	"instance" : {
+		"entityProvider" : "AR 5/7/2018 12:13",
+		"entityProvider:" : "AR 5/7/2018 12:13",
+		"getEntities" : "AR 5/7/2018 15:01",
+		"startStepping" : "AR 5/7/2018 13:42",
+		"startStepping:at:arguments:stepTime:" : "AR 5/7/2018 13:43",
+		"step" : "AR 5/7/2018 14:29" } }

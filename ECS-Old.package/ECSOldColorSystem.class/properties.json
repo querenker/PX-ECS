@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Old",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSOldColorSystem",
+	"pools" : [
+		 ],
+	"super" : "ECSOldSystem",
+	"type" : "normal" }
