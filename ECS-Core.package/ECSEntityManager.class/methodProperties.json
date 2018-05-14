@@ -4,8 +4,10 @@
 	"instance" : {
 		"addComponent:to:" : "AR 5/11/2018 09:25",
 		"allComponentsOf:" : "ek 5/14/2018 15:33",
+		"componentOfType:for:" : "AR 5/14/2018 15:59",
 		"componentStore" : "AR 5/10/2018 17:24",
 		"componentStore:" : "AR 5/10/2018 17:24",
+		"componentsOfType:for:" : "AR 5/14/2018 15:59",
 		"createEntity" : "AR 5/10/2018 17:21",
 		"entitiesWithComponentOfTyp:" : "AR 5/11/2018 09:23",
 		"entity:hasComponentOfType:" : "AR 5/10/2018 18:23",
