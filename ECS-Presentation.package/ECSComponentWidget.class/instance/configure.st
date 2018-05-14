@@ -4,7 +4,8 @@ configure
 	| page |
 	
 	self removeAllMorphs.
-	page := PHPage column.
+	page := PHPage column
+		add: (PHLabel text: self component className).
 	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter |
 		
 		textArea := PHTextArea new text: (self component perform: instVarName asSymbol) asString.
