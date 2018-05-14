@@ -1,4 +1,4 @@
 accessing
 startEssay
 
-	self playground color: Color red
+	self isRunning: true

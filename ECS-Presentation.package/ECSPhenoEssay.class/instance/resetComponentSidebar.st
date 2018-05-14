@@ -1,0 +1,4 @@
+accessing
+resetComponentSidebar
+
+	self componentSidebar removeAllMorphs

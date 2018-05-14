@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id" ],
+	"name" : "ECSEntity",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,4 +1,5 @@
 accessing
 stopEssay
+"TODO not only pause, reset everything"
 
-	self playground color: Color blue
+	self isRunning: false

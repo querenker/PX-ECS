@@ -1,4 +1,4 @@
 accessing
 pauseEssay
 
-	self playground color: Color yellow
+	self isRunning: false
