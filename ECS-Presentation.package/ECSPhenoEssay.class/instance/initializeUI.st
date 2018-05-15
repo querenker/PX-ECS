@@ -10,7 +10,9 @@ initializeUI
 			expand: true;
 			add: (PHPage column
 				expand: true;
-				add: self createPlaygroundSimulationButtons;
+				add: (PHPage row
+					add: self createPlaygroundSimulationButtons;
+					add: (ECSMorphContainer with: self simulationIndicator));
 				add: self createPlaygroundContainer;
 				add: self entitySidebar);
 			add: self componentSidebar)

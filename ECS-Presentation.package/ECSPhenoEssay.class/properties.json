@@ -14,7 +14,8 @@
 		"playground",
 		"componentSidebar",
 		"isRunning",
-		"currentEntity" ],
+		"currentEntity",
+		"simulationIndicator" ],
 	"name" : "ECSPhenoEssay",
 	"pools" : [
 		 ],

@@ -6,6 +6,7 @@ createSlideIntroduction
 		withLayout;
 		add: (PHPage column
 			withLayout;
+			align: #(center center);
 			expand: true;
 			add: (PHLabel text: '- topic: Entity Component System');
 			add: (PHLabel text: '- ECS is a programming pattern');
