@@ -1,4 +1,4 @@
-accessing
+ECS Logic
 addComponent: aComponentClass to: anEntity
 
 	| component |

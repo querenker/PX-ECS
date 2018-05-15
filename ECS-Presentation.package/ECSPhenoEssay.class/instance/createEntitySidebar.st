@@ -1,4 +1,4 @@
-accessing
+UI Building
 createEntitySidebar
 
 	| button |
@@ -7,6 +7,7 @@ createEntitySidebar
 
 	^ PHPage row
 		withLayout;
+		align: #(center center);
 		add: button;
 		add: ((PHButton icon: #iconPlus)
 			when: #clicked

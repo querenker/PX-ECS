@@ -1,4 +1,4 @@
-accessing
+ECS Logic
 addEntity
 
 	self currentEntity: self entityManager createEntity.

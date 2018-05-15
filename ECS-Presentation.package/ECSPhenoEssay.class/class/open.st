@@ -1,4 +1,4 @@
-as yet unclassified
+constructors
 open
 
 	^ self new openInWindowLabeled: 'ECS Essay'

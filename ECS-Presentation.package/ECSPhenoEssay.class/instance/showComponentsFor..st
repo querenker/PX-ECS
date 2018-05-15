@@ -1,4 +1,4 @@
-accessing
+UI Building
 showComponentsFor: anEntity
 
 	| button componentDropdown |
@@ -19,7 +19,7 @@ showComponentsFor: anEntity
 			withArguments: {ECSGravityComponent . anEntity})).
 	
 	self componentSidebar
-		add: (PHLabel text: 'Entity: ', anEntity);
+		add: self createComponentsForEntityLabel;
 		add: button.
 	
 	(self entityManager allComponentsOf: anEntity) do: [:aComponent |

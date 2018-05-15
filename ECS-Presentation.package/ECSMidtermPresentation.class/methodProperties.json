@@ -3,4 +3,8 @@
 		"open" : "ek 5/13/2018 23:58",
 		"openInPresentationMode" : "ek 5/14/2018 17:21" },
 	"instance" : {
-		"initialize" : "ek 5/14/2018 17:48" } }
+		"createSlideIntroduction" : "ek 5/15/2018 11:21",
+		"createSlideOldEssay" : "ek 5/15/2018 12:19",
+		"createSlidePhenoEssay" : "ek 5/15/2018 12:27",
+		"initialize" : "ek 5/15/2018 11:11",
+		"initializeFirstSlide" : "ek 5/15/2018 11:09" } }

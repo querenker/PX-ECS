@@ -1,4 +1,4 @@
-accessing
+initialization
 configure
 
 	| page |

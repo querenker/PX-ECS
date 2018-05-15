@@ -1,4 +1,4 @@
-accessing
+UI Building
 resetComponentSidebar
 
 	self componentSidebar removeAllMorphs

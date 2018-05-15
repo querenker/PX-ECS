@@ -1,4 +1,4 @@
-as yet unclassified
+layout
 calculateSizeForWidth: aNumber
 
 	^ PHSizeRequest fixed: self firstSubmorph extent
