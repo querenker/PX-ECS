@@ -13,9 +13,9 @@
 		"entityDropdown",
 		"playground",
 		"componentSidebar",
-		"isRunning",
 		"currentEntity",
-		"simulationIndicator" ],
+		"simulationIndicator",
+		"simulationProcess" ],
 	"name" : "ECSECSWidget",
 	"pools" : [
 		 ],

@@ -6,4 +6,5 @@ initialize
 	self
 		initializeDefaultInstVars;
 		initializeECS;
+		initalizeSimulationProcess;
 		initializeUI
