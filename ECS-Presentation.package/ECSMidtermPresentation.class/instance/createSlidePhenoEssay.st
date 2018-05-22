@@ -5,5 +5,5 @@ createSlidePhenoEssay
 		withLayout;
 		expand: true;
 		add: PHWidget spacer;
-		add: ECSPhenoEssay new;
+		add: ECSECSWidget new;
 		add: PHWidget spacer

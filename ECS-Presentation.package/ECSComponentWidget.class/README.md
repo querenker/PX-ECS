@@ -1,0 +1,1 @@
+I am a visual representation of a component.

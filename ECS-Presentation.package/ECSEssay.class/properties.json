@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "ek 5/22/2018 17:44",
+	"commentStamp" : "ek 5/22/2018 17:31",
 	"instvars" : [
 		 ],
-	"name" : "ECSMidtermPresentation",
+	"name" : "ECSEssay",
 	"pools" : [
 		 ],
-	"super" : "PHPresentation",
+	"super" : "Object",
 	"type" : "normal" }
