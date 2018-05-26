@@ -1,0 +1,1 @@
+I am a Component. I only hold data.

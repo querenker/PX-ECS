@@ -4,10 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "ek 5/26/2018 17:42",
 	"instvars" : [
 		"color",
-		"position",
 		"extent" ],
 	"name" : "ECSRepresentationComponent",
 	"pools" : [

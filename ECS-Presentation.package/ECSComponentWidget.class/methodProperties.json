@@ -3,6 +3,13 @@
 		"with:" : "ek 5/14/2018 14:17" },
 	"instance" : {
 		"component" : "ek 5/14/2018 14:16",
-		"component:" : "ek 5/14/2018 14:18",
-		"configure" : "ek 5/14/2018 16:56",
-		"initialize" : "ek 5/14/2018 14:18" } }
+		"component:" : "ek 5/26/2018 17:34",
+		"componentTextValueAssociation" : "ek 5/26/2018 16:46",
+		"componentTextValueAssociation:" : "ek 5/26/2018 16:46",
+		"configure" : "ek 5/26/2018 16:46",
+		"initialize" : "ek 5/26/2018 17:34",
+		"shouldUpdate" : "ek 5/26/2018 17:33",
+		"shouldUpdate:" : "ek 5/26/2018 17:33",
+		"step" : "ek 5/26/2018 17:35",
+		"stepTime" : "ek 5/26/2018 17:36",
+		"update" : "ek 5/26/2018 17:18" } }

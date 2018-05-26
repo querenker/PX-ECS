@@ -1,0 +1,1 @@
+I am an Entity. I am only an Id to which components are associated.

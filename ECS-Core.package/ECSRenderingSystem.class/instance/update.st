@@ -3,9 +3,16 @@ update
 	
 	| entities drawCommands |
 	entities := entityMgr entitiesWithComponentOfTyp: #representation.
-	drawCommands := entities values collect: [ :component |
-		[:surface |
-			surface fillRectangle: (component position extent: component extent) color: component color]].
+	
+	drawCommands := OrderedCollection new.
+	
+	entities keysAndValuesDo: [:entity :repComponent | 
+		|posComponent|
+		posComponent := (self entityMgr componentOfType: #position for: entity).
+		
+		drawCommands add: [:surface |
+			surface fillRectangle: (posComponent position extent: repComponent extent) color: repComponent color]].
+	
 	self drawSurface drawBlock: [:surface |
 		drawCommands do: [:command |
 			command value: surface]]

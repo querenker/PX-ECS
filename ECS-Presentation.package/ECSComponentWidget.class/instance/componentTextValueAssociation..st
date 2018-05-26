@@ -1,0 +1,3 @@
+accessing
+componentTextValueAssociation: anObject
+	componentTextValueAssociation := anObject

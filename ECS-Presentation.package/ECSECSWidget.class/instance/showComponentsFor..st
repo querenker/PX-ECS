@@ -16,7 +16,12 @@ showComponentsFor: anEntity
 			when: #clicked
 			send: #addComponent:to:
 			to: self
-			withArguments: {ECSGravityComponent . anEntity})).
+			withArguments: {ECSGravityComponent . anEntity});
+		add: ((PHDropdownItem label: 'Position')
+			when: #clicked
+			send: #addComponent:to:
+			to: self
+			withArguments: {ECSPositionComponent . anEntity})).
 	
 	self componentSidebar
 		add: self createComponentsForEntityLabel;

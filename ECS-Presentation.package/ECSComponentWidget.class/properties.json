@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "ek 5/22/2018 17:43",
 	"instvars" : [
-		"component" ],
+		"component",
+		"componentTextValueAssociation",
+		"shouldUpdate" ],
 	"name" : "ECSComponentWidget",
 	"pools" : [
 		 ],

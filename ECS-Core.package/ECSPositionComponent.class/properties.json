@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "ek 5/26/2018 17:42",
 	"instvars" : [
-		"id" ],
-	"name" : "ECSEntity",
+		"position" ],
+	"name" : "ECSPositionComponent",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSComponent",
 	"type" : "normal" }

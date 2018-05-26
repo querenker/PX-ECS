@@ -2,4 +2,8 @@ initialization
 initialize
 
 	super initialize.
-	self withLayout
+	
+	self
+		componentTextValueAssociation: Dictionary new;
+		shouldUpdate: false;
+		withLayout

@@ -1,0 +1,1 @@
+I am a System. I work with Entities that have a component of my type.
