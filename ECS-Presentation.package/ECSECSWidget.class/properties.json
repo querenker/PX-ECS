@@ -15,7 +15,9 @@
 		"componentSidebar",
 		"currentEntity",
 		"simulationIndicator",
-		"simulationProcess" ],
+		"simulationProcess",
+		"simulationButton",
+		"isSimulating" ],
 	"name" : "ECSECSWidget",
 	"pools" : [
 		 ],
