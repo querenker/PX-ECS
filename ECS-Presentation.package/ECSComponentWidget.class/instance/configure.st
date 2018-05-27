@@ -1,12 +1,12 @@
 UI
 configure
 
-	| page |
+	| widgetPage |
 	
 	self removeAllMorphs.
-	page := PHPage column
+	widgetPage := PHPage column
 		add: (PHLabel text: self component className).
-	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter label |
+	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter label instVarPage |
 
 		label := PHLabel text: instVarName.		
 		textArea := PHTextArea new text: (self component perform: instVarName asSymbol) asString.
@@ -16,8 +16,20 @@ configure
 		when: #confirmed
 		evaluate: [:x | component perform: instVarSetter asSymbol with: (Compiler evaluate: textArea text)].
 		
-		page add: (PHPage row
+		instVarPage := PHPage row.
+		
+		widgetPage add: (instVarPage
 			add: label;
 			add: textArea).
+		
+		(instVarName asString asLowercase includesSubstring: 'path')
+			ifTrue: [ instVarPage
+				add: ((PHButton icon: #iconPlus)
+					when: #clicked
+					send: #openPictureChooserFor:
+					to: self
+					with: instVarName asSymbol)]. 
+		
 		self componentTextValueAssociation at: instVarName put: textArea].
-	self add: page
+	
+	self add: widgetPage

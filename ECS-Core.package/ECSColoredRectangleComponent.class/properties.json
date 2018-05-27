@@ -8,7 +8,7 @@
 	"instvars" : [
 		"color",
 		"extent" ],
-	"name" : "ECSRepresentationComponent",
+	"name" : "ECSColoredRectangleComponent",
 	"pools" : [
 		 ],
 	"super" : "ECSComponent",

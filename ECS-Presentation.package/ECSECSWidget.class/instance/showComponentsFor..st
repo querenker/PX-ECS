@@ -7,11 +7,11 @@ showComponentsFor: anEntity
 	button := (PHButton label: 'Add Component' iconSuffix: #iconPlus).
 	componentDropdown := (PHDropdown new
 		attachTo: button;
-		add: ((PHDropdownItem label: 'Representation')
+		add: ((PHDropdownItem label: 'ColoredRectangle')
 			when: #clicked
 			send: #addComponent:to:
 			to: self
-			withArguments: {ECSRepresentationComponent . anEntity});
+			withArguments: {ECSColoredRectangleComponent . anEntity});
 		add: ((PHDropdownItem label: 'Gravity')
 			when: #clicked
 			send: #addComponent:to:
@@ -21,7 +21,12 @@ showComponentsFor: anEntity
 			when: #clicked
 			send: #addComponent:to:
 			to: self
-			withArguments: {ECSPositionComponent . anEntity})).
+			withArguments: {ECSPositionComponent . anEntity});
+		add:((PHDropdownItem label: 'Picture')
+			when: #clicked
+			send: #addComponent:to:
+			to: self
+			withArguments: {ECSPictureComponent . anEntity})).
 	
 	self componentSidebar
 		add: self createComponentsForEntityLabel;
