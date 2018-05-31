@@ -1,6 +1,5 @@
 UI
 step
 
-	self shouldUpdate ifTrue: [
-		self update.
-		self shouldUpdate: false] 
+	self componentTextValueAssociation do: [:textArea |
+		textArea hasFocus ifFalse: [self update]]
