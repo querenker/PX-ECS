@@ -7,9 +7,9 @@ initializeFirstSlide
 			expand: true;
 			add: PHWidget spacer;
 			add: ((PHLabel text: 'PX Final Presentation - ECS Essay')
-				"ToDo: find out how to change font"
-				pointSize: 50;
+				pointSize: 80;
 				align: #(center center));
 			add: ((PHLabel text: 'by Alexander Riese, Eva Krebs')
-				align: #(center center));
+				align: #(center center);
+				pointSize: 40);
 			add: PHWidget spacer).
