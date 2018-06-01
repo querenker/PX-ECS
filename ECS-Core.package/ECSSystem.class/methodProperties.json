@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"with:" : "AR 5/11/2018 09:08" },
+		"with:" : "AR 6/1/2018 15:29" },
 	"instance" : {
-		"entityMgr" : "AR 5/11/2018 09:05",
-		"entityMgr:" : "AR 5/11/2018 09:05",
+		"entityManager" : "AR 6/1/2018 15:29",
+		"entityManager:" : "AR 6/1/2018 15:29",
 		"update" : "AR 5/11/2018 09:00" } }

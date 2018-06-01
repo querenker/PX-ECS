@@ -1,4 +1,7 @@
 as yet unclassified
 entitiesWithComponentOfTyp: aTyp
 
-	^ self componentStore at: aTyp ifAbsent: Dictionary new.
+	| entityIds |
+	entityIds := (self componentStore at: aTyp ifAbsent: Dictionary new) keys.
+	^ entityIds collect: [:entityId | ECSEntityHandle for: entityId with: self]
+	

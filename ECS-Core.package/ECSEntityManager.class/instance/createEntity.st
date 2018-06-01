@@ -1,4 +1,4 @@
 as yet unclassified
 createEntity
 
-	^ UUID new
+	^  ECSEntityHandle for: UUID new with: self

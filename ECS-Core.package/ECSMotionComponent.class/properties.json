@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "ek 5/26/2018 17:43",
+	"commentStamp" : "",
 	"instvars" : [
-		"entityManager" ],
-	"name" : "ECSSystem",
+		"velocity",
+		"acceleration" ],
+	"name" : "ECSMotionComponent",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSComponent",
 	"type" : "normal" }

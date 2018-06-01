@@ -1,7 +1,8 @@
 as yet unclassified
-with: anEntityManager
+for: anEntityId with: anEntityManager
 
 	| instance |
 	instance := self new.
+	instance entityId: anEntityId.
 	instance entityManager: anEntityManager.
 	^ instance

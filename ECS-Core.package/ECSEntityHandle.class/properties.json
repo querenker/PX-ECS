@@ -4,10 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "ek 5/26/2018 17:43",
+	"commentStamp" : "",
 	"instvars" : [
+		"entityId",
 		"entityManager" ],
-	"name" : "ECSSystem",
+	"name" : "ECSEntityHandle",
 	"pools" : [
 		 ],
 	"super" : "Object",

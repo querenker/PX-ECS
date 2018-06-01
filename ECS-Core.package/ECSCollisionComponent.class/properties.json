@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "ek 5/26/2018 17:42",
+	"commentStamp" : "",
 	"instvars" : [
-		"id" ],
-	"name" : "ECSEntity",
+		"collisionBoundary" ],
+	"name" : "ECSCollisionComponent",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSComponent",
 	"type" : "normal" }
