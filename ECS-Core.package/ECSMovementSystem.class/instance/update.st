@@ -3,8 +3,6 @@ update
 	
 	| entities |
 	entities := (entityManager entitiesWithComponentOfTyp: #motion).
-	entities keysAndValuesDo: [:entity :motionComponent | 
-		|posComponent|
-		posComponent := (self entityManager componentOfType: #position for: entity).
-		posComponent position: posComponent position + motionComponent velocity.
-		motionComponent velocity: motionComponent velocity + motionComponent acceleration]
+	entities do: [:entity |
+		entity position position: entity position position + entity motion velocity.
+		entity motion velocity: entity motion velocity + entity motion acceleration]
