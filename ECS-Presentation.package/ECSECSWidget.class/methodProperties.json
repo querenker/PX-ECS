@@ -2,7 +2,7 @@
 	"class" : {
 		"open" : "AR 5/9/2018 10:52" },
 	"instance" : {
-		"addComponent:to:" : "ek 5/14/2018 15:21",
+		"addComponent:to:" : "AR 6/3/2018 15:17",
 		"addEntity" : "ek 5/14/2018 15:11",
 		"componentSidebar" : "ek 5/14/2018 13:56",
 		"componentSidebar:" : "ek 5/14/2018 13:56",
@@ -27,7 +27,7 @@
 		"initalizeSimulationProcess" : "ek 5/26/2018 17:24",
 		"initialize" : "AR 5/22/2018 19:58",
 		"initializeDefaultInstVars" : "ek 5/26/2018 16:01",
-		"initializeECS" : "AR 6/1/2018 18:43",
+		"initializeECS" : "AR 6/3/2018 15:19",
 		"initializeUI" : "ek 5/26/2018 16:01",
 		"isSimulating" : "ek 5/26/2018 15:54",
 		"isSimulating:" : "ek 5/26/2018 15:54",
@@ -36,7 +36,7 @@
 		"playground" : "AR 5/9/2018 10:48",
 		"playground:" : "AR 5/9/2018 10:48",
 		"resetComponentSidebar" : "ek 5/15/2018 11:53",
-		"showComponentsFor:" : "AR 6/1/2018 19:44",
+		"showComponentsFor:" : "AR 6/3/2018 15:21",
 		"simulationButton" : "ek 5/26/2018 16:00",
 		"simulationButton:" : "ek 5/26/2018 16:00",
 		"simulationIndicator" : "ek 5/15/2018 14:49",

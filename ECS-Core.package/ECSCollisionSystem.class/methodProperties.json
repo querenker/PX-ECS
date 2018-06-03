@@ -1,5 +1,6 @@
 {
 	"class" : {
-		"update" : "AR 6/1/2018 19:03" },
+		 },
 	"instance" : {
-		 } }
+		"solveCollisionOf:withIntersection:" : "AR 6/3/2018 15:50",
+		"update" : "AR 6/3/2018 15:48" } }

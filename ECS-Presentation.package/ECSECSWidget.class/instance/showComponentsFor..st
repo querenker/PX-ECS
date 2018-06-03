@@ -27,6 +27,11 @@ showComponentsFor: anEntity
 			send: #addComponent:to:
 			to: self
 			withArguments: {ECSMotionComponent . anEntity entityId });
+		add: ((PHDropdownItem label: 'Collision')
+			when: #clicked
+			send: #addComponent:to:
+			to: self
+			withArguments: {ECSCollisionComponent . anEntity entityId });
 		add:((PHDropdownItem label: 'Picture')
 			when: #clicked
 			send: #addComponent:to:
@@ -37,5 +42,5 @@ showComponentsFor: anEntity
 		add: self createComponentsForEntityLabel;
 		add: button.
 	
-	(self entityManager allComponentsOf: anEntity) do: [:aComponent |
+	anEntity components do: [:aComponent |
 		self displayComponent: aComponent]
