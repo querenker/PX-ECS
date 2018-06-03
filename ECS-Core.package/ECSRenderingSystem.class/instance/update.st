@@ -2,7 +2,7 @@ as yet unclassified
 update
 	
 	| entities drawCommands |
-	entities := entityManager entitiesWithComponentOfTyp: #representation.
+	entities := entityManager entitiesWithComponentsOfTyps: #(#representation #position).
 	
 	drawCommands := OrderedCollection new.
 	

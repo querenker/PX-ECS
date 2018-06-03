@@ -2,9 +2,11 @@
 	"class" : {
 		"for:with:" : "AR 6/1/2018 19:16" },
 	"instance" : {
+		"=" : "AR 6/2/2018 16:23",
 		"addComponent:" : "AR 6/1/2018 19:37",
 		"doesNotUnderstand:" : "AR 6/1/2018 19:49",
 		"entityId" : "AR 6/1/2018 19:10",
 		"entityId:" : "AR 6/1/2018 19:10",
 		"entityManager" : "AR 6/1/2018 19:10",
-		"entityManager:" : "AR 6/1/2018 19:10" } }
+		"entityManager:" : "AR 6/1/2018 19:10",
+		"hash" : "AR 6/2/2018 16:19" } }
