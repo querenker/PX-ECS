@@ -1,0 +1,1 @@
+I am the collision system, I handle collisions between entities.

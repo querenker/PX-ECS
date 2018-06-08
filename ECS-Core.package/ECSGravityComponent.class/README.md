@@ -1,1 +1,1 @@
-With me, an entity has gravity.
+With me, an entity is influenced by gravity.

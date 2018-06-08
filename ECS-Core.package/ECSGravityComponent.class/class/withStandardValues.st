@@ -3,5 +3,5 @@ withStandardValues
 
 	| instance |
 	instance := self new.
-	instance gravity: 10.
+	instance gravity: 1.
 	^ instance

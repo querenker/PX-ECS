@@ -1,0 +1,1 @@
+I am an entity handle, I provide an interface to access all information (= components) of an entity.
