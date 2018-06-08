@@ -1,1 +1,1 @@
-I am a visual representation of a component.
+I am a visual representation of a component. All instance variables of the components can be edited through me.
