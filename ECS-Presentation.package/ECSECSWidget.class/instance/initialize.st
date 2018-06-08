@@ -7,4 +7,5 @@ initialize
 		initializeDefaultInstVars;
 		initializeECS;
 		initalizeSimulationProcess;
-		initializeUI
+		initializeUI;
+		play
