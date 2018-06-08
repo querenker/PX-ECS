@@ -11,5 +11,5 @@ createEntitySidebar
 		add: button;
 		add: ((PHButton icon: #iconPlus)
 			when: #clicked
-			send: #addEntity
+			send: #openAddEntityDialog
 			to: self)

@@ -1,7 +1,6 @@
 ECS Logic
-addEntity
+addCurrentEntity
 
-	self currentEntity: self entityManager createEntity.
 	self entities add: self currentEntity.
 	self entityDropdown
 		add: ((PHDropdownItem label: currentEntity name)
