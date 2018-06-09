@@ -7,36 +7,12 @@ showComponentsFor: anEntity
 	button := (PHButton label: 'Add Component' iconSuffix: #iconPlus).
 	componentDropdown := (PHDropdown new
 		attachTo: button;
-		add: ((PHDropdownItem label: 'ColoredRectangle')
-			when: #clicked
-			send: #addComponent:to:
-			to: self
-			withArguments: {ECSColoredRectangleComponent . anEntity entityId });
-		add: ((PHDropdownItem label: 'Gravity')
-			when: #clicked
-			send: #addComponent:to:
-			to: self
-			withArguments: {ECSGravityComponent . anEntity entityId });
-		add: ((PHDropdownItem label: 'Position')
-			when: #clicked
-			send: #addComponent:to:
-			to: self
-			withArguments: {ECSPositionComponent . anEntity entityId });
-		add: ((PHDropdownItem label: 'Motion')
-			when: #clicked
-			send: #addComponent:to:
-			to: self
-			withArguments: {ECSMotionComponent . anEntity entityId });
-		add: ((PHDropdownItem label: 'Collision')
-			when: #clicked
-			send: #addComponent:to:
-			to: self
-			withArguments: {ECSCollisionComponent . anEntity entityId });
-		add:((PHDropdownItem label: 'Picture')
-			when: #clicked
-			send: #addComponent:to:
-			to: self
-			withArguments: {ECSPictureComponent . anEntity entityId })).
+		add: (self dropdownItemFor: ECSColoredRectangleComponent labeled: 'ColoredRectangle' withEntity: anEntity);
+		add: (self dropdownItemFor: ECSGravityComponent labeled: 'Gravity' withEntity: anEntity);
+		add: (self dropdownItemFor: ECSPositionComponent labeled: 'Position' withEntity: anEntity);
+		add: (self dropdownItemFor: ECSMotionComponent labeled: 'Motion' withEntity: anEntity);
+		add: (self dropdownItemFor: ECSCollisionComponent labeled: 'Collision' withEntity: anEntity);
+		add: (self dropdownItemFor: ECSPictureComponent labeled: 'Picutre' withEntity: anEntity)).
 	
 	self componentSidebar
 		add: self createComponentsForEntityLabel;
