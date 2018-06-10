@@ -1,4 +1,8 @@
 accessing
 doesNotUnderstand: aMessage
-	
-	^ self entityManager componentOfType: aMessage selector for: self entityId.  
+
+	| componentSuffix componentTag |
+	componentSuffix := 'Component'.
+	(aMessage selector endsWith: componentSuffix) ifFalse: [super doesNotUnderstand: aMessage].
+	componentTag := (aMessage selector readStream upToAll: componentSuffix) asSymbol.
+	^ self entityManager componentOfType: componentTag for: self entityId.  

@@ -5,7 +5,7 @@ update
 	entities := self entityManager entitiesWithComponentsOfTyps: #(#collision #position).
 	entities do: [:entity |
 		| translatedCollisionBoundary otherTranslatedCollisionBoundary |
-		translatedCollisionBoundary := entity collision collisionBoundary translateBy: entity position position.
+		translatedCollisionBoundary := entity collisionComponent collisionBoundary translateBy: entity positionComponent position.
 		entities do: [:otherEntity |
-			otherTranslatedCollisionBoundary := otherEntity collision collisionBoundary translateBy: otherEntity position position.
+			otherTranslatedCollisionBoundary := otherEntity collisionComponent collisionBoundary translateBy: otherEntity positionComponent position.
 			self solveCollisionOf: (Set with: entity with: otherEntity) withIntersection: (translatedCollisionBoundary intersect: otherTranslatedCollisionBoundary)]]

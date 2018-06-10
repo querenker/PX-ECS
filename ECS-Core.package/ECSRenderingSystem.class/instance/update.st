@@ -8,7 +8,7 @@ update
 	
 	entities do: [:entity |
 		drawCommands add: [:surface |
-			surface fillRectangle: (entity position position extent: entity representation extent) color: entity representation color]].
+			surface fillRectangle: (entity positionComponent position extent: entity representationComponent extent) color: entity representationComponent color]].
 	
 	self drawSurface drawBlock: [:surface |
 		drawCommands do: [:command |

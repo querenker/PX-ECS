@@ -8,5 +8,5 @@ solveCollisionOf: aSetOfEntities withIntersection: anIntersection
 		| resolvingDirection movementDelta resolvingSign |
 		resolvingDirection := (anIntersection height < anIntersection width) ifTrue: #y ifFalse: #x.
 		movementDelta := (resolvingDirection == #x) ifTrue: [anIntersection width @ 0] ifFalse: [0 @ (anIntersection height)].
-		resolvingSign := (entity motion velocity perform: resolvingDirection) > 0 ifTrue: [-1] ifFalse: [1].
-		entity position position: entity position position + (resolvingSign * movementDelta)]
+		resolvingSign := (entity motionComponent velocity perform: resolvingDirection) > 0 ifTrue: [-1] ifFalse: [1].
+		entity positionComponent position: entity positionComponent position + (resolvingSign * movementDelta)]
