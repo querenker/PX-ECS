@@ -7,4 +7,5 @@ initializeDefaultInstVars
 	self componentSidebar: self createComponentSidebar.
 	self simulationIndicator: self createSimulationIndicator.
 	self simulationButton: self createPlaygroundSimulationButton.
-	self isSimulating: false
+	self isSimulating: false.
+	self keyboardObserver: OrderedCollection new.

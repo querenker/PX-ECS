@@ -17,7 +17,8 @@
 		"simulationIndicator",
 		"simulationProcess",
 		"simulationButton",
-		"isSimulating" ],
+		"isSimulating",
+		"keyboardObserver" ],
 	"name" : "ECSECSWidget",
 	"pools" : [
 		 ],

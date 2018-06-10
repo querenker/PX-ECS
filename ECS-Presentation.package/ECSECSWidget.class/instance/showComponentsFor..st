@@ -12,6 +12,7 @@ showComponentsFor: anEntity
 		add: (self dropdownItemFor: ECSPositionComponent labeled: 'Position' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSMotionComponent labeled: 'Motion' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSCollisionComponent labeled: 'Collision' withEntity: anEntity);
+		add: (self dropdownItemFor: ECSInputComponent labeled: 'Input' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSPictureComponent labeled: 'Picutre' withEntity: anEntity)).
 	
 	self componentSidebar

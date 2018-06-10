@@ -7,5 +7,6 @@ initializeECS
 			add: (ECSRenderingSystem withEntityManager: self entityManager drawSurface: self playground);
 			add: (ECSGravitySystem with: self entityManager);
 			add: (ECSMovementSystem with: self entityManager);
+			add: (ECSInputSystem withEntityManager: self entityManager inputSubject: self);
 			add: (ECSCollisionSystem with: self entityManager);
-			yourself)
+			yourself).
