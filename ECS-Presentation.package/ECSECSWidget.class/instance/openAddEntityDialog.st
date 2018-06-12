@@ -12,8 +12,5 @@ openAddEntityDialog
 	
 	" opening a dialog returns a promise that can be rejected/accepted with PHDialog>>accept:/cancel: Closing the dialog cancel:'s "
 	(dialog openFor: self)
-		then: [self addEntityNamed: textArea text];
-		ifRejected: [self add: (PHAlert
-			icon: #iconExclamation_triangle
-			text: 'No entity created'
-			type: #danger)]
+		then: [self showComponentsFor: (self addEntityNamed: textArea text)];
+		ifRejected: [self topLevel displayNotification: 'No entity created' asString type: #danger]

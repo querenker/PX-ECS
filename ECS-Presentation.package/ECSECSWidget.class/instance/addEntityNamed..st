@@ -1,5 +1,5 @@
 ECS Logic
 addEntityNamed: aString
 
-	self currentEntity: (self entityManager createEntityNamed: aString).
-	self addCurrentEntity
+	^ self addEntity: (self entityManager createEntityNamed: aString)
+	

@@ -2,6 +2,7 @@ UI Building
 showComponentsFor: anEntity
 
 	| button componentDropdown |
+	self currentEntity: anEntity.
 	self resetComponentSidebar.
 	
 	button := (PHButton label: 'Add Component' iconSuffix: #iconPlus).
