@@ -1,0 +1,3 @@
+accessing
+pictureCache
+	^ pictureCache

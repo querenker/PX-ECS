@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "ek 6/8/2018 22:39",
 	"instvars" : [
-		"drawSurface" ],
+		"drawSurface",
+		"pictureCache" ],
 	"name" : "ECSRenderingSystem",
 	"pools" : [
 		 ],

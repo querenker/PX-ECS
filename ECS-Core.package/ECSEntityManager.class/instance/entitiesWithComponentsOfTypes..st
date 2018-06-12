@@ -1,5 +1,5 @@
 as yet unclassified
-entitiesWithComponentsOfTyps: aCollectionOfTypes
+entitiesWithComponentsOfTypes: aCollectionOfTypes
 
 	| entities |
 	entities := aCollectionOfTypes collect: [:typ | self entitiesWithComponentOfType: typ].
