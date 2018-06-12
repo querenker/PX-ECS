@@ -14,7 +14,7 @@ showComponentsFor: anEntity
 		add: (self dropdownItemFor: ECSMotionComponent labeled: 'Motion' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSCollisionComponent labeled: 'Collision' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSInputComponent labeled: 'Input' withEntity: anEntity);
-		add: (self dropdownItemFor: ECSPictureComponent labeled: 'Picutre' withEntity: anEntity)).
+		add: (self dropdownItemFor: ECSPictureComponent labeled: 'Picture' withEntity: anEntity)).
 	
 	self componentSidebar
 		add: self createComponentsForEntityLabel;
