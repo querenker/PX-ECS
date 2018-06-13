@@ -1,7 +1,0 @@
-as yet unclassified
-entitiesWithComponentsOfTyps: aCollectionOfTypes
-
-	| entities |
-	entities := aCollectionOfTypes collect: [:typ | self entitiesWithComponentOfType: typ].
-	^ entities inject: entities first into: [:set :entitiesOfOneType | set intersection: entitiesOfOneType]
-	

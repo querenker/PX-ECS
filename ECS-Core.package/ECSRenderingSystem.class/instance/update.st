@@ -2,8 +2,8 @@ as yet unclassified
 update
 	
 	| drawCommands entitiesWithColoredRectangles entitiesWithPictures |
-	entitiesWithColoredRectangles := entityManager entitiesWithComponentsOfTyps: #(#coloredRectangle #position).
-	entitiesWithPictures := entityManager entitiesWithComponentsOfTyps: #(#picture #position).
+	entitiesWithColoredRectangles := entityManager entitiesWithComponentsOfTypes: #(#coloredRectangle #position).
+	entitiesWithPictures := entityManager entitiesWithComponentsOfTypes: #(#picture #position).
 	
 	drawCommands := OrderedCollection new.
 	
@@ -13,8 +13,9 @@ update
 	
 	entitiesWithPictures do: [:entity |
 		drawCommands add: [:surface | | form |
-			form := Form fromFileNamed: (entity pictureComponent picturePath). 
-			self flag: 'todo']].
+			entity pictureComponent picturePath ifNotNilDo:  [ :filePath | 
+				form := Form fromFileNamed: filePath. 
+				surface drawImage: form at: entity positionComponent position]]].
 	
 	self drawSurface drawBlock: [:surface |
 		drawCommands do: [:command |

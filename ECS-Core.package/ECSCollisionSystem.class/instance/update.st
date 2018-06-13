@@ -2,7 +2,7 @@ as yet unclassified
 update
 
 	| entities |
-	entities := self entityManager entitiesWithComponentsOfTyps: #(#collision #position).
+	entities := self entityManager entitiesWithComponentsOfTypes: #(#collision #position).
 	entities do: [:entity |
 		| translatedCollisionBoundary otherTranslatedCollisionBoundary |
 		translatedCollisionBoundary := entity collisionComponent collisionBoundary translateBy: entity positionComponent position.

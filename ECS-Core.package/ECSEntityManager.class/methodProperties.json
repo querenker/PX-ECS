@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addComponent:to:" : "AR 6/1/2018 19:44",
+		"addComponent:to:" : "ek 6/13/2018 09:06",
 		"allComponentsOf:" : "ek 5/14/2018 15:33",
 		"componentOfType:for:" : "AR 5/14/2018 15:59",
 		"componentStore" : "AR 5/10/2018 17:24",
@@ -11,7 +11,6 @@
 		"createEntity" : "AR 6/1/2018 19:17",
 		"createEntityNamed:" : "ek 6/8/2018 23:12",
 		"entitiesWithComponentOfType:" : "ek 6/12/2018 16:40",
-		"entitiesWithComponentsOfTypes:" : "ek 6/12/2018 17:01",
-		"entitiesWithComponentsOfTyps:" : "ek 6/12/2018 17:01",
+		"entitiesWithComponentsOfTypes:" : "ek 6/13/2018 08:56",
 		"entity:hasComponentOfType:" : "AR 6/3/2018 16:12",
 		"initialize" : "AR 5/10/2018 18:27" } }
