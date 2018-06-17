@@ -13,6 +13,8 @@ initializeUI
 				add: (PHPage row
 					add: self simulationButton;
 					add: (ECSMorphContainer with: self simulationIndicator));
+				add: (PHPage row
+					add: self createSystemButton);
 				add: self createPlaygroundContainer;
 				add: self entitySidebar);
 			add: self componentSidebar)
