@@ -5,7 +5,7 @@ openAddSystemDialog
 	dialog := PHDialog new.
 	systemNameTextArea := PHTextArea placeholder: 'enter name'.
 	componentFilterTagList := PHWritableTagList new.
-	sourceCodeTextArea := PHTextArea placeholder: 'enter code which will be applied to each enitiy'.
+	sourceCodeTextArea := PHTextArea placeholder: 'enter code which will be applied to each entitiy'.
 	
 	dialog title: 'Add System'.
 	dialog content: (PHPage new

@@ -14,7 +14,7 @@ update
 	entitiesWithPictures do: [:entity |
 		drawCommands add: [:surface | | form |
 			entity pictureComponent picturePath ifNotNilDo:  [ :filePath | 
-				form := Form fromFileNamed: filePath. 
+				form := self getFormFor: filePath. 
 				surface drawImage: form at: entity positionComponent position]]].
 	
 	self drawSurface drawBlock: [:surface |
