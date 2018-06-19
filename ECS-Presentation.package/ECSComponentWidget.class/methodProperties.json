@@ -1,14 +1,17 @@
 {
 	"class" : {
-		"with:" : "ek 5/14/2018 14:17" },
+		"component:parentUI:" : "ek 6/19/2018 23:01" },
 	"instance" : {
 		"component" : "ek 5/14/2018 14:16",
 		"component:" : "ek 5/31/2018 09:56",
 		"componentTextValueAssociation" : "ek 5/26/2018 16:46",
 		"componentTextValueAssociation:" : "ek 5/26/2018 16:46",
-		"configure" : "ek 5/27/2018 14:52",
+		"configure" : "ek 6/19/2018 22:50",
 		"initialize" : "ek 5/31/2018 09:56",
 		"openPictureChooserFor:" : "ek 5/27/2018 14:58",
+		"parentUI" : "ek 6/19/2018 23:01",
+		"parentUI:" : "ek 6/19/2018 23:01",
+		"removeMe" : "ek 6/19/2018 23:01",
 		"step" : "ek 6/8/2018 22:32",
 		"stepTime" : "ek 5/26/2018 17:36",
-		"updateAll" : "ek 6/8/2018 22:28" } }
+		"updateAll" : "ek 6/19/2018 22:45" } }

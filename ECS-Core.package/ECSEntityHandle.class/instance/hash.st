@@ -1,4 +1,4 @@
 accessing
 hash
 
-	^ self entityId hash bitXor: self entityManager hash.
+	^ self entityId hash bitXor: self entityManager hash

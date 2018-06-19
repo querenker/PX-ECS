@@ -13,4 +13,5 @@
 		"entitiesWithComponentOfType:" : "ek 6/12/2018 16:40",
 		"entitiesWithComponentsOfTypes:" : "ek 6/13/2018 08:56",
 		"entity:hasComponentOfType:" : "AR 6/3/2018 16:12",
-		"initialize" : "AR 5/10/2018 18:27" } }
+		"initialize" : "AR 5/10/2018 18:27",
+		"removeComponent:from:" : "ek 6/19/2018 23:30" } }

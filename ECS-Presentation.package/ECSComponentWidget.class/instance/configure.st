@@ -1,14 +1,17 @@
 UI
 configure
 
-	| widgetPage |
+	| widgetPage removeButton |
 	
 	self removeAllMorphs.
+	removeButton := (PHButton icon: #iconTrash) when: #clicked send: #removeMe to: self.
 	widgetPage := PHPage column
-		add: (PHLabel text: self component className).
+		add: (PHPage row
+			add:(PHLabel text: self component className)
+			oppositeTo: removeButton).
 	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter label instVarPage |
 
-		label := PHLabel text: instVarName.		
+		label := PHLabel text: instVarName.
 		textArea := PHTextArea new text: (self component perform: instVarName asSymbol) asString.
 		instVarSetter := instVarName, ':'.
 

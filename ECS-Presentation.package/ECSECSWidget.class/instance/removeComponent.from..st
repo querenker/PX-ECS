@@ -1,11 +1,8 @@
 ECS Logic
-addComponent: aComponentClass to: anEntity
+removeComponent: aComponentClass from: anEntity
 
 	| component |
 	component := aComponentClass withStandardValues.
 	self entityManager addComponent: component to: anEntity.
-	self componentSidebar
-		add: (ECSComponentWidget
-			component: component
-			parentUI: self).
+	self componentSidebar add: (ECSComponentWidget with: component).
 	^ component

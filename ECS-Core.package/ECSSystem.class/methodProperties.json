@@ -2,6 +2,12 @@
 	"class" : {
 		"with:" : "AR 6/1/2018 15:29" },
 	"instance" : {
+		"disable" : "ek 6/19/2018 23:54",
+		"enable" : "ek 6/19/2018 23:54",
 		"entityManager" : "AR 6/1/2018 15:29",
 		"entityManager:" : "AR 6/1/2018 15:29",
-		"update" : "AR 5/11/2018 09:00" } }
+		"initialize" : "ek 6/19/2018 23:53",
+		"isEnabled" : "ek 6/19/2018 23:52",
+		"isEnabled:" : "ek 6/19/2018 23:52",
+		"update" : "AR 5/11/2018 09:00",
+		"updateIfEnabled" : "ek 6/19/2018 23:53" } }

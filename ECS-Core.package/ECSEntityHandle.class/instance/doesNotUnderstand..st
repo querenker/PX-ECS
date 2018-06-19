@@ -5,4 +5,7 @@ doesNotUnderstand: aMessage
 	componentSuffix := 'Component'.
 	(aMessage selector endsWith: componentSuffix) ifFalse: [super doesNotUnderstand: aMessage].
 	componentTag := (aMessage selector readStream upToAll: componentSuffix) asSymbol.
-	^ self entityManager componentOfType: componentTag for: self entityId.  
+	(self hasComponentOfType: componentTag)
+		ifTrue: [^ self entityManager componentOfType: componentTag for: self entityId]
+		ifFalse: [^ nil]
+	

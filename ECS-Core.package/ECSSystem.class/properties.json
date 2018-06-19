@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "ek 5/26/2018 17:43",
 	"instvars" : [
+		"isEnabled",
 		"entityManager" ],
 	"name" : "ECSSystem",
 	"pools" : [

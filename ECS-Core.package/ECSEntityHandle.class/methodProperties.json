@@ -4,14 +4,15 @@
 		"for:with:named:" : "ek 6/8/2018 23:13" },
 	"instance" : {
 		"=" : "AR 6/2/2018 16:23",
-		"addComponent:" : "AR 6/1/2018 19:37",
+		"addComponent:" : "ek 6/19/2018 22:15",
 		"components" : "AR 6/3/2018 15:13",
-		"doesNotUnderstand:" : "AR 6/10/2018 20:04",
+		"doesNotUnderstand:" : "ek 6/19/2018 23:40",
 		"entityId" : "AR 6/1/2018 19:10",
 		"entityId:" : "AR 6/1/2018 19:10",
 		"entityManager" : "AR 6/1/2018 19:10",
 		"entityManager:" : "AR 6/1/2018 19:10",
 		"hasComponentOfType:" : "AR 6/3/2018 14:11",
-		"hash" : "AR 6/3/2018 14:23",
+		"hash" : "ek 6/19/2018 22:30",
 		"name" : "ek 6/8/2018 22:39",
-		"name:" : "ek 6/8/2018 22:39" } }
+		"name:" : "ek 6/8/2018 22:39",
+		"removeComponent:" : "ek 6/19/2018 22:30" } }
