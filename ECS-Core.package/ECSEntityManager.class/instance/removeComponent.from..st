@@ -6,5 +6,4 @@ removeComponent: aComponent from: anEntity
 	self componentStore at: (aComponent class type) ifPresent: [ :store |
 		store keysAndValuesRemove: [:entity :component | entity == anEntity entityId and: component == aComponent].
 		store ifEmpty: [emptyFlag := true]].
-	emptyFlag ifTrue: [self componentStore removeKey: (aComponent class type)].
-	self inspect
+	emptyFlag ifTrue: [self componentStore removeKey: (aComponent class type)]
