@@ -1,17 +1,17 @@
 UI Building
 openAddSystemDialog
 
-	| dialog systemNameTextArea componentFilterTagList sourceCodeTextArea |
+	| dialog systemNameTextArea componentFilterTextArea sourceCodeTextArea |
 	dialog := PHDialog new.
 	systemNameTextArea := PHTextArea placeholder: 'enter name'.
-	componentFilterTagList := PHWritableTagList new.
+	componentFilterTextArea := PHTextArea placeholder: 'add component filters'.
 	sourceCodeTextArea := PHTextArea placeholder: 'enter code which will be applied to each entity'.
 	
 	dialog title: 'Add System'.
 	dialog content: (PHPage new
 		withPadding;
 		add: (systemNameTextArea expand: true);
-		add: (componentFilterTagList);
+		add: (componentFilterTextArea);
 		add: (sourceCodeTextArea);
 		add: ((PHButton text: 'Accept')
 			when: #clicked
@@ -23,7 +23,8 @@ openAddSystemDialog
 	" opening a dialog returns a promise that can be rejected/accepted with PHDialog>>accept:/cancel: Closing the dialog cancel:'s "
 	(dialog openFor: self)
 		then: [
-			|componentFilterTags |
-			componentFilterTags := (componentFilterTagList tags collect: [:tag | tag asSymbol]) asArray.
-			self createSystem: systemNameTextArea text componentFilter: componentFilterTags updateMethod: sourceCodeTextArea text];
+			|componentFilterTags systemClass |
+			componentFilterTags := ((componentFilterTextArea text splitBy: ' ')collect: [:tag | tag asSymbol]) asArray.
+			systemClass := (self createSystem: systemNameTextArea text componentFilter: componentFilterTags updateMethod: sourceCodeTextArea text).
+			self addSystem: (systemClass with: self entityManager)];
 		ifRejected: [self topLevel displayNotification: 'No system created' asString type: #danger]

@@ -5,4 +5,5 @@ createSystem: aSystemName componentFilter: aComponentFilter updateMethod: aUpdat
 	system := self createSystem: aSystemName.
 	methodSource := self systemUpdateMethodTemplate format: { aComponentFilter .  aUpdateMethod }.
 	system compile: methodSource.
+	^ system
 	

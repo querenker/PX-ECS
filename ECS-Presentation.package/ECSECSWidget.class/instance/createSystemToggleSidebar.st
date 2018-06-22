@@ -1,9 +1,6 @@
 UI Building
 createSystemToggleSidebar
 
-	| page |
-	page := PHPage column.
-	
-	self systems do: [:system | page add: (ECSSystemToggleWidget for: system)].
-	
-	^ page
+	self systemSidebar: PHPage column.
+	self systems do: [:system | self systemSidebar add: (ECSSystemToggleWidget for: system)].
+	^ self systemSidebar
