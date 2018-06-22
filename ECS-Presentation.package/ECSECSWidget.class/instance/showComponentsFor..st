@@ -6,7 +6,9 @@ showComponentsFor: anEntity
 	self configureComponentDropdownButtonForCurrentEntity.
 	
 	self componentSidebar
-		add: self createComponentsForEntityLabel;
+		add: (PHPage row
+			add: self createComponentsForEntityLabel
+			oppositeTo: self createRenameCurrentEntityButton);
 		add: self addComponentToEntityButton;
 		add: (PHScrollArea new
 			policy: #(show scroll);

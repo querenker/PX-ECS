@@ -1,0 +1,4 @@
+UI Building
+configureChooseEntityButtonIfNeeded
+
+	self chooseEntityButton shouldBeUpdated ifTrue: [self configureChooseEntityButton]

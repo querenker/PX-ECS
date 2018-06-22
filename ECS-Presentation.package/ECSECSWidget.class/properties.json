@@ -10,7 +10,7 @@
 		"entities",
 		"entityManager",
 		"entitySidebar",
-		"entityDropdown",
+		"chooseEntityButton",
 		"playground",
 		"componentSidebar",
 		"componentsForEntityWidget",
