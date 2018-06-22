@@ -1,4 +1,4 @@
 UI Building
 createComponentsForEntityLabel
 
-	^ PHLabel new text: 'Components for ', self currentEntity name
+	^ PHLabel heading: 'Components for ', self currentEntity name

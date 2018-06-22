@@ -7,7 +7,7 @@ configure
 	removeButton := (PHButton icon: #iconTrash) when: #clicked send: #removeMe to: self.
 	widgetPage := PHPage column
 		add: (PHPage row
-			add:(PHLabel text: self component className)
+			add:(PHLabel subHeading: self component className)
 			oppositeTo: removeButton).
 	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter label instVarPage |
 

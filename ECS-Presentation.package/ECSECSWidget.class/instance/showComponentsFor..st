@@ -1,15 +1,13 @@
 UI Building
 showComponentsFor: anEntity
 
-	| button |
 	self currentEntity: anEntity.
 	self resetComponentSidebar.
-	
-	button := self createComponentsDropdownButtonFor: anEntity.
+	self configureComponentDropdownButtonForCurrentEntity.
 	
 	self componentSidebar
 		add: self createComponentsForEntityLabel;
-		add: button;
+		add: self addComponentToEntityButton;
 		add: (PHScrollArea new
 			policy: #(show scroll);
 			content: self componentsForEntityWidget).

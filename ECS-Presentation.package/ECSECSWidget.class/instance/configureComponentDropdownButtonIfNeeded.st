@@ -1,0 +1,4 @@
+UI Building
+configureComponentDropdownButtonIfNeeded
+
+	self addComponentToEntityButton shouldBeUpdated ifTrue: [self configureComponentDropdownButtonForCurrentEntity]
