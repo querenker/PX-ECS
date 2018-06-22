@@ -9,7 +9,10 @@ showComponentsFor: anEntity
 	
 	self componentSidebar
 		add: self createComponentsForEntityLabel;
-		add: button.
+		add: button;
+		add: (PHScrollArea new
+			policy: #(show scroll);
+			content: self componentsForEntityWidget).
 	
 	anEntity components do: [:aComponent |
 		self displayComponent: aComponent]

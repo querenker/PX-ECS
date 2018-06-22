@@ -1,4 +1,5 @@
 UI Building
 resetComponentSidebar
 
-	self componentSidebar removeAllMorphs
+	self componentSidebar removeAllMorphs.
+	self componentsForEntityWidget removeAllMorphs

@@ -1,7 +1,7 @@
 UI Building
 displayComponent: aComponent
 
-	self componentSidebar
+	self componentsForEntityWidget
 		add: (ECSComponentWidget
 			component: aComponent
 			parentUI: self)

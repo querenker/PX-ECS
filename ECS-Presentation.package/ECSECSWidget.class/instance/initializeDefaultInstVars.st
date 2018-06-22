@@ -4,6 +4,8 @@ initializeDefaultInstVars
 	self entities: OrderedCollection new.
 	self playground: ECSCanvasMorph new.
 	self entitySidebar: self createEntitySidebar.
+	self componentsForEntityWidget: (PHWidget newWithVerticalLayout
+		addStyleClass: #withPadding).
 	self componentSidebar: self createComponentSidebar.
 	self simulationIndicator: self createSimulationIndicator.
 	self simulationButton: self createPlaygroundSimulationButton.
