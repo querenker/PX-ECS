@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Presentation",
+	"classinstvars" : [
+		"system" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"system",
+		"checkboxWithLabel" ],
+	"name" : "ECSSystemToggleWidget",
+	"pools" : [
+		 ],
+	"super" : "PHWidget",
+	"type" : "normal" }

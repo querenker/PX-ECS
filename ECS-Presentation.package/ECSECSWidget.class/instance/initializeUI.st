@@ -8,6 +8,7 @@ initializeUI
 		expand: true;
 		add: (PHPage row
 			expand: true;
+			add: (self createSystemToggleSidebar);
 			add: (PHPage column
 				expand: true;
 				add: (PHPage row

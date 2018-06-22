@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"for:" : "ek 6/20/2018 08:56" },
+	"instance" : {
+		"checkboxWithLabel" : "ek 6/21/2018 12:12",
+		"checkboxWithLabel:" : "ek 6/21/2018 12:12",
+		"configure" : "ek 6/21/2018 12:13",
+		"disableSystem" : "ek 6/21/2018 12:09",
+		"enableSystem" : "ek 6/21/2018 12:09",
+		"initialize" : "ek 6/20/2018 08:58",
+		"system" : "ek 6/20/2018 08:56",
+		"system:" : "ek 6/20/2018 08:56",
+		"toggleSystem" : "ek 6/21/2018 12:13" } }
