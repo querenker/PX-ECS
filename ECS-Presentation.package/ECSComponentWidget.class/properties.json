@@ -8,7 +8,9 @@
 	"instvars" : [
 		"component",
 		"componentTextValueAssociation",
-		"parentUI" ],
+		"parentUI",
+		"contentWidget",
+		"cardNameWidget" ],
 	"name" : "ECSComponentWidget",
 	"pools" : [
 		 ],
