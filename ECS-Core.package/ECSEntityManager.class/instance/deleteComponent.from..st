@@ -1,5 +1,5 @@
 as yet unclassified
-removeComponent: aComponent from: anEntity
+deleteComponent: aComponent from: anEntity
 
 	| emptyFlag |
 	emptyFlag := false.

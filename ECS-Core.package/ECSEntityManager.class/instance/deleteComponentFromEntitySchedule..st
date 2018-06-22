@@ -1,0 +1,3 @@
+accessing
+deleteComponentFromEntitySchedule: anObject
+	deleteComponentFromEntitySchedule := anObject
