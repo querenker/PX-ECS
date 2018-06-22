@@ -22,7 +22,8 @@
 		"isSimulating",
 		"keyboardObserver",
 		"createSystemButton",
-		"systemSidebar" ],
+		"systemSidebar",
+		"createComponentButton" ],
 	"name" : "ECSECSWidget",
 	"pools" : [
 		 ],
