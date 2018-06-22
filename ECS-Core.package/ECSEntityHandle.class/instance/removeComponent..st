@@ -1,4 +1,4 @@
 accessing
 removeComponent: aComponent
 
-	self entityManager removeComponent: aComponent from: self entityId
+	self entityManager scheduleComponentForDeletion: aComponent from: self entityId

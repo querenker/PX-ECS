@@ -10,8 +10,12 @@
 		"componentsOfType:for:" : "AR 5/14/2018 15:59",
 		"createEntity" : "AR 6/1/2018 19:17",
 		"createEntityNamed:" : "ek 6/8/2018 23:12",
+		"deleteAllScheduledComponentsFromEntities" : "ek 6/22/2018 13:19",
+		"deleteComponent:from:" : "ek 6/22/2018 13:10",
+		"deleteComponentFromEntitySchedule" : "ek 6/22/2018 13:08",
+		"deleteComponentFromEntitySchedule:" : "ek 6/22/2018 13:08",
 		"entitiesWithComponentOfType:" : "ek 6/12/2018 16:40",
 		"entitiesWithComponentsOfTypes:" : "ek 6/13/2018 08:56",
 		"entity:hasComponentOfType:" : "AR 6/3/2018 16:12",
-		"initialize" : "AR 5/10/2018 18:27",
-		"removeComponent:from:" : "ek 6/20/2018 00:05" } }
+		"initialize" : "ek 6/22/2018 13:12",
+		"scheduleComponentForDeletion:from:" : "ek 6/22/2018 13:17" } }

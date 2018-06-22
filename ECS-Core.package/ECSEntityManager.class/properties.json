@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "ek 6/8/2018 22:42",
 	"instvars" : [
-		"componentStore" ],
+		"componentStore",
+		"deleteComponentFromEntitySchedule" ],
 	"name" : "ECSEntityManager",
 	"pools" : [
 		 ],

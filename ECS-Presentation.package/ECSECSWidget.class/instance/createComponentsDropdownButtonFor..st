@@ -6,7 +6,6 @@ createComponentsDropdownButtonFor: anEntity
 	componentDropdown := (PHDropdown new
 		attachTo: button;
 		add: (self dropdownItemFor: ECSColoredRectangleComponent labeled: 'ColoredRectangle' withEntity: anEntity);
-		add: (self dropdownItemFor: ECSGravityComponent labeled: 'Gravity' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSPositionComponent labeled: 'Position' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSMotionComponent labeled: 'Motion' withEntity: anEntity);
 		add: (self dropdownItemFor: ECSCollisionComponent labeled: 'Collision' withEntity: anEntity);
