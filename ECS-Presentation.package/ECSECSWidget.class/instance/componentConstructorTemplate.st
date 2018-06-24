@@ -3,4 +3,7 @@ componentConstructorTemplate
 
 	^ 'withStandardValues
 	
-	^ self new'
+	| instance |
+	instance := self new.
+	{1}
+	^ instance'

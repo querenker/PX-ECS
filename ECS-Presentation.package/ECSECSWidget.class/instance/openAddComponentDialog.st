@@ -1,16 +1,21 @@
 UI Building
 openAddComponentDialog
 
-	| dialog componentNameTextArea componentFieldsTextArea |
+	| dialog componentNameTextArea componentFieldHolder |
 	dialog := PHDialog new.
 	componentNameTextArea := PHTextArea placeholder: 'enter name'.
-	componentFieldsTextArea := PHTextArea placeholder: 'add component fields'.
+	componentFieldHolder := ECSComponentFieldHolder new.
 	
 	dialog title: 'Add Component'.
 	dialog content: (PHPage new
 		withPadding;
 		add: (componentNameTextArea expand: true);
-		add: (componentFieldsTextArea);
+		add: (componentFieldHolder);
+		add: ((PHButton text: 'Add field')
+			when: #clicked
+			send: #addComponentField
+			to: componentFieldHolder;
+			align: #(center center));
 		add: ((PHButton text: 'Accept')
 			when: #clicked
 			send: #accept:
@@ -22,6 +27,6 @@ openAddComponentDialog
 	(dialog openFor: self)
 		then: [
 			| componentClass |
-			componentClass := (self createComponent: componentNameTextArea text withFields: (componentFieldsTextArea text splitBy: ' ')).
+			componentClass := (self createComponent: componentNameTextArea text withFields: (componentFieldHolder componentFields)).
 			self addComponent: componentClass to: self currentEntity];
 		ifRejected: [self topLevel displayNotification: 'No system created' asString type: #danger]
