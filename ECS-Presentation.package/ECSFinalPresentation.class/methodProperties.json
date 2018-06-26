@@ -4,5 +4,15 @@
 		"open" : "ek 5/22/2018 17:29",
 		"openInPresentationMode" : "ek 5/22/2018 17:29" },
 	"instance" : {
-		"initialize" : "ek 5/22/2018 17:32",
+		"createAttributeOrgaSlide" : "ek 6/26/2018 14:55",
+		"createECSNameSlide" : "ek 6/26/2018 14:52",
+		"createInheritanceSlide" : "ek 6/26/2018 14:54",
+		"createIntroSlide" : "ek 6/26/2018 14:54",
+		"createMethodOverviewSlide" : "ek 6/26/2018 14:55",
+		"createMinimalGameSlide" : "ek 6/26/2018 14:47",
+		"createPerformanceSlide" : "ek 6/26/2018 14:56",
+		"createTask1Slide" : "ek 6/26/2018 14:46",
+		"createTask2Slide" : "ek 6/26/2018 14:47",
+		"createTask3Slide" : "ek 6/26/2018 14:47",
+		"initialize" : "ek 6/26/2018 14:56",
 		"initializeFirstSlide" : "ek 5/31/2018 10:27" } }
