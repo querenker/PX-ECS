@@ -3,16 +3,12 @@ configure
 
 	| widgetPage removeButton |
 	
-	self cardNameWidget removeAllMorphs.
-	self contentWidget removeAllMorphs.
-	
+	self removeAllMorphs.
 	removeButton := (PHButton icon: #iconTrash) when: #clicked send: #removeMe to: self.
-	self cardNameWidget
-		add:(PHLabel subHeading: self component className)
-		oppositeTo: removeButton.
-	
-	widgetPage := PHPage column.
-	
+	widgetPage := PHPage column
+		add: (PHPage row
+			add:(PHLabel subHeading: self component className)
+			oppositeTo: removeButton).
 	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter label instVarPage |
 
 		label := PHLabel text: instVarName.
@@ -39,4 +35,4 @@ configure
 		
 		self componentTextValueAssociation at: instVarName put: textArea].
 	
-	self contentWidget add: widgetPage
+	self add: widgetPage
