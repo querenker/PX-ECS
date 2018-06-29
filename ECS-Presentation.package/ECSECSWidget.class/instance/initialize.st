@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	self
-		minSize: 1700@800;
+		minSize: (1200@700) withScalingFactor;
 		initializeDefaultInstVars;
 		initializeECS;
 		initalizeSimulationProcess;
