@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Presentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title",
+		"content" ],
+	"name" : "ECSSlideWithTitle",
+	"pools" : [
+		 ],
+	"super" : "PHWidget",
+	"type" : "normal" }
