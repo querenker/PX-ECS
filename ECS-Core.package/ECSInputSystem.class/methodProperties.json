@@ -2,7 +2,16 @@
 	"class" : {
 		"withEntityManager:inputSubject:" : "AR 6/9/2018 19:35" },
 	"instance" : {
+		"getCharacterForKey:" : "ek 7/1/2018 23:37",
 		"handlesKeyboard:" : "AR 6/10/2018 17:52",
+		"initialize" : "ek 7/1/2018 23:31",
+		"initializeKeyLookupLinux" : "ek 7/1/2018 23:28",
+		"initializeKeyLookupMac" : "ek 7/1/2018 23:27",
+		"initializeKeyLookupOSIndependent" : "ek 7/1/2018 23:29",
+		"initializeKeyLookupWindows" : "ek 7/1/2018 23:54",
+		"keys" : "ek 7/1/2018 23:30",
+		"keys:" : "ek 7/1/2018 23:30",
 		"lastEvent" : "AR 6/9/2018 19:41",
 		"lastEvent:" : "AR 6/9/2018 19:41",
-		"update" : "ek 6/13/2018 08:46" } }
+		"supportedPlatformDict" : "ek 7/1/2018 23:28",
+		"update" : "ek 7/1/2018 23:43" } }

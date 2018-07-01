@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "ek 7/1/2018 23:29",
 	"instvars" : [
-		"lastEvent" ],
+		"lastEvent",
+		"keys" ],
 	"name" : "ECSInputSystem",
 	"pools" : [
 		 ],

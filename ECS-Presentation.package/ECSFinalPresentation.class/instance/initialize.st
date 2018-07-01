@@ -3,6 +3,8 @@ initialize
 	
 	super initialize.
 	
+	self spacePressed: false.
+	
 	self initializeFirstSlide.
 	
 	self
