@@ -13,7 +13,6 @@ initialize
 		addSlide: self createECSNameSlide;
 		addSlide: self createTask1Slide;
 		addSlide: self createTask2Slide;
-		addSlide: self createTask3Slide;
 		addSlide: self createMinimalGameSlide;
 		addSlide: self createPerformanceSlide.
 		

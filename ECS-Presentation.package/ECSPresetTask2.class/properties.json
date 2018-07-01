@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Presentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSPresetTask2",
+	"pools" : [
+		 ],
+	"super" : "ECSECSWidget",
+	"type" : "normal" }

@@ -6,6 +6,7 @@ createECSNameSlide
 		withLayout;
 		expand: true;
 		add: (PHPage column
+			add: (PHWidget new minSize:  10@50 withScalingFactor);
 			add: ((PHLabel text: 'E')
 				pointSize: 73);
 			add: ((PHLabel text: 'C')
@@ -16,6 +17,7 @@ createECSNameSlide
 				
 			add: (PHPage column
 				expand: true;
+				add: (PHWidget new minSize:  10@50 withScalingFactor);
 				add: ((PHLabel text: 'ntities group together components')
 					pointSize: 70";"
 					"align: #(center center)");
