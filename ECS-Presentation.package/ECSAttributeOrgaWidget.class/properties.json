@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-Presentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entities",
+		"attributes",
+		"connections",
+		"stepProcess",
+		"drawnLines" ],
+	"name" : "ECSAttributeOrgaWidget",
+	"pools" : [
+		 ],
+	"super" : "PHWidget",
+	"type" : "normal" }
