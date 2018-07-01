@@ -2,7 +2,9 @@ initialize-release
 createInheritanceSlide
 
 	| content entityBody entityCard entityContent entityHeader dwarfCard dwarfWizardCard wizardCard wizardBody wizardContent wizardHeader dwarfBody dwarfContent dwarfHeader dwarfWizardBody dwarfWizardContent dwarfWizardHeader |
-	content := PHPage column.
+	content := PHWidget new
+		expand: true;
+		align: #(fill fill).
 	
 	entityContent := (PHWidget new
 		withLayout;
@@ -13,7 +15,9 @@ createInheritanceSlide
 		add: (PHLabel text: '- health');
 		add: (PHLabel text: 'Methods:');
 		add: (PHLabel text: '- walk()')).
-	entityBody := PHCollapsible new add: entityContent.
+	entityBody := PHCollapsible new
+		toggleCollapsed;
+		add: entityContent.
 	entityHeader := PHCardHeader new
 		add: (PHLabel text: 'Entity');
 		when: #clicked send: #toggleCollapsed to: entityBody;
@@ -36,7 +40,9 @@ createInheritanceSlide
 		add: (PHLabel text: 'Methods:');
 		add: (PHLabel text: '- walk()');
 		add: (PHLabel text: '- curse()')).
-	wizardBody := PHCollapsible new add: wizardContent.
+	wizardBody := PHCollapsible new
+		toggleCollapsed;
+		add: wizardContent.
 	dwarfContent := (PHWidget new
 		withLayout;
 		vertical: true;
@@ -48,7 +54,9 @@ createInheritanceSlide
 		add: (PHLabel text: 'Methods:');
 		add: (PHLabel text: '- walk()');
 		add: (PHLabel text: '- attack()')).
-	dwarfBody := PHCollapsible new add: dwarfContent.
+	dwarfBody := PHCollapsible new
+		toggleCollapsed;
+		add: dwarfContent.
 	
 	wizardHeader := PHCardHeader new
 		add: (PHLabel text: 'Wizard');
@@ -88,7 +96,9 @@ createInheritanceSlide
 		add: (PHLabel text: '- walk()');
 		add: (PHLabel text: '- curse()');
 		add: (PHLabel text: '- attack()')).
-	dwarfWizardBody := PHCollapsible new add: dwarfWizardContent.
+	dwarfWizardBody := PHCollapsible new
+		toggleCollapsed;
+		add: dwarfWizardContent.
 	dwarfWizardHeader := PHCardHeader new
 		add: (PHLabel text: 'Dwarf Wizard');
 		when: #clicked send: #toggleCollapsed to: dwarfWizardBody;
@@ -99,15 +109,24 @@ createInheritanceSlide
 		add: dwarfWizardHeader;
 		add: dwarfWizardBody;
 		yourself).
-	
+			
 	content
-		add: entityCard;
 		add: (PHPage row
-			add: wizardCard;
+			expand: true;
+			align: #(center start);
 			add: (PHPage column
-				add: (PHWidget new minSize: (100@100) withScalingFactor );
+				align: #(center start);
+				add: (PHWidget new minSize: (100@50) withScalingFactor );
+				add: wizardCard);
+			add: (PHPage column
+				align: #(center start);
+				add: entityCard;
+				add: (PHWidget new minSize: (100@50) withScalingFactor );
 				add: dwarfWizardCard);
-			add: dwarfCard).
+			add: (PHPage column
+				align: #(center start);
+				add: (PHWidget new minSize: (100@50) withScalingFactor );
+				add: dwarfCard)).
 
 	^ ECSSlideWithTitle
 		title: 'inheritance'
