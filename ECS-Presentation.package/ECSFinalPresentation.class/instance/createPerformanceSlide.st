@@ -1,12 +1,15 @@
 initialize-release
 createPerformanceSlide
 
-	^ PHWidget new
-		withLayout;
-		expand: true;
-		add: (PHPage column
+	^ ECSSlideWithTitle
+		title: 'Performance'
+		content: (PHWidget new
+			withLayout;
 			expand: true;
 			add: PHWidget spacer;
-			add: ((PHLabel text: 'something with performance')
-				pointSize: 70;
-				align: #(center center)))
+			add: (PHImage new
+			align: #(center center);
+			scalingMode: #shrink;
+			minSize: 800 asPoint;
+			form: ECSPictures performanceSlide);
+			add: PHWidget spacer)
