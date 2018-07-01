@@ -2,11 +2,11 @@ initialize-release
 createIntroSlide
 
 	^ ECSSlideWithTitle
-		title: '(Game Programming) Pattern'
+		title: 'Introduction'
 		content: (PHPage column
-			add: ((PHLabel text: '- ECS is a non-object-oriented architectural pattern')
+			add: ((PHLabel text: 'An Entity Component System (ECS) is')
 				pointSize: 45);
-			add: ((PHLabel text: '- mostly used in games')
+			add: ((PHLabel text: '- a non-object-oriented architectural pattern')
 				pointSize: 45);
-			add: ((PHLabel text: '- very cool')
+			add: ((PHLabel text: '- used in games and simulations')
 				pointSize: 45))

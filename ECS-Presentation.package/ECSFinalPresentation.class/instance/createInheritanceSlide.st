@@ -3,8 +3,8 @@ createInheritanceSlide
 
 	| content entityBody entityCard entityContent entityHeader dwarfCard dwarfWizardCard wizardCard wizardBody wizardContent wizardHeader dwarfBody dwarfContent dwarfHeader dwarfWizardBody dwarfWizardContent dwarfWizardHeader |
 	content := PHWidget new
-		expand: true;
-		align: #(fill fill).
+		withLayout;
+		expand: true.
 	
 	entityContent := (PHWidget new
 		withLayout;
@@ -112,22 +112,20 @@ createInheritanceSlide
 			
 	content
 		add: (PHPage row
-			expand: true;
-			align: #(center start);
+			add: (PHWidget new minSize: (500@100) withScalingFactor );
+			"add: PHWidget spacer;"
 			add: (PHPage column
-				align: #(center start);
 				add: (PHWidget new minSize: (100@50) withScalingFactor );
 				add: wizardCard);
 			add: (PHPage column
-				align: #(center start);
 				add: entityCard;
 				add: (PHWidget new minSize: (100@50) withScalingFactor );
 				add: dwarfWizardCard);
 			add: (PHPage column
-				align: #(center start);
 				add: (PHWidget new minSize: (100@50) withScalingFactor );
-				add: dwarfCard)).
+				add: dwarfCard)";
+			add: PHWidget spacer").
 
 	^ ECSSlideWithTitle
-		title: 'inheritance'
+		title: 'Creating a Game, Idea 1: Inheritance'
 		content: (PHWidget new withLayout ; add: content)
