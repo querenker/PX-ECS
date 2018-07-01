@@ -1,5 +1,5 @@
 initialization
 outOfWorld: aWorld
 
-	super outOfWorld: aWorld
+	super outOfWorld: aWorld.
 	self simulationProcess terminate
