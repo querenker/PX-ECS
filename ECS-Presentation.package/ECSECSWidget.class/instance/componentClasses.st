@@ -8,4 +8,5 @@ componentClasses
 		add: ECSCollisionComponent;
 		add: ECSInputComponent;
 		add: ECSPictureComponent;
+		add: ECSHealthComponent;
 		yourself

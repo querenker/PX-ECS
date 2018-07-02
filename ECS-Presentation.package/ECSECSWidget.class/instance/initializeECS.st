@@ -8,4 +8,5 @@ initializeECS
 			add: (ECSMovementSystem with: self entityManager);
 			add: (ECSInputSystem withEntityManager: self entityManager inputSubject: self);
 			add: (ECSCollisionSystem with: self entityManager);
+			add: (ECSHealthSystem with: self entityManager);
 			yourself).
