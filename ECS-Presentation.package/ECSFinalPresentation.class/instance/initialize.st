@@ -20,7 +20,7 @@ initialize
 		addSlide: self createPerformanceSlide;
 		addSlide: self createTask3Slide;
 		addSlide: self createMinimalGameSlide;
-		"addSlide: self createSummarySlide"
+		addSlide: self createSummarySlide;
 		addSlide: self createFinalSlide.
 		
 	self showFirstSlide

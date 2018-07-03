@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Presentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSSystemSlide",
+	"pools" : [
+		 ],
+	"super" : "PHSlide",
+	"type" : "normal" }
