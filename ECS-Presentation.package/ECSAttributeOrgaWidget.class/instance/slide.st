@@ -1,7 +1,7 @@
 accessing
 slide
 
-	| slideContent wizard dwarf dwarfWizard entityBar attributeBar weaponSkill mana shieldEnergy walkingSpeed |
+	| slideContent wizard dwarf dwarfWizard entityBar attributeBar mana walkingSpeed health walkingDirection axePower |
 	entityBar := (PHPage row).
 	attributeBar := (PHPage row).
 	
@@ -25,17 +25,28 @@ slide
 	
 	self entities do: [:entity | entityBar add: entity].
 		
-	self attributes add: (weaponSkill := PHBadge text: 'weapon skill').
-	self attributes add: (shieldEnergy := PHBadge text: 'shield Energy').
+	self attributes add: (health := PHBadge text: 'health').
 	self attributes add: (walkingSpeed := PHBadge text: 'walking speed').
+	self attributes add: (walkingDirection := PHBadge text: 'walking direction').
 	self attributes add: (mana := PHBadge text: 'mana').
+	self attributes add: (axePower := PHBadge text: 'axe power').
 	self attributes do: [:attribute | attributeBar add: attribute].
 	
+	self connections add: {wizard . health}.
 	self connections add: {wizard . walkingSpeed}.
+	self connections add: {wizard . walkingDirection}.
 	self connections add: {wizard . mana}.
 	
+	self connections add: {dwarf . health}.
 	self connections add: {dwarf . walkingSpeed}.
-	self connections add: {dwarf . weaponSkill}.
+	self connections add: {dwarf . walkingDirection}.
+	self connections add: {dwarf . axePower}.
+	
+	self connections add: {dwarfWizard . health}.
+	self connections add: {dwarfWizard . walkingSpeed}.
+	self connections add: {dwarfWizard . walkingDirection}.
+	self connections add: {dwarfWizard . mana}.
+	self connections add: {dwarfWizard . axePower}.
 	
 	slideContent := PHPage column.
 	slideContent

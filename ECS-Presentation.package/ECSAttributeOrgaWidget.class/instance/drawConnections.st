@@ -7,5 +7,5 @@ drawConnections
 		| from to |
 		from := connection first bounds bottomCenter.
 		to := connection second bounds topCenter.
-		drawnLines add: (LineMorph from: from to: to color: Color green width: 2)].
+		drawnLines add: (LineMorph from: from to: to color: Color gray width: 2)].
 	self drawnLines do: [:line | line openInWorld].
