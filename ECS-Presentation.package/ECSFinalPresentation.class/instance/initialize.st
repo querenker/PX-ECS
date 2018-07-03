@@ -11,7 +11,7 @@ initialize
 		addSlide: self createIntroSlide;
 		addSlide: self createInheritanceSlide;
 		addSlide: self createAttributeOrgaSlide;
-		"addSlide: self createIntroToSystemsSlide"
+		addSlide: self createSystemSlide;
 		addSlide: self createECSNameSlide;
 		addSlide: self createTask1Slide;
 		addSlide: self createTask2Slide;
