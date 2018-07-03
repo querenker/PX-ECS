@@ -12,6 +12,7 @@ createSummarySlide
 										String cr, String cr,
 										' - decouples multiple domains', String cr,
 										' - simplifies code reuse', String cr,
+										' - data-oriented design', String cr,
 										' - multi-threaded design')
 					pointSize: 80;
 					align: #(center center));
