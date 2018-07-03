@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initializeECS" : "ek 7/1/2018 17:24" } }
+		"componentClasses" : "ek 7/3/2018 14:51",
+		"initializeECS" : "ek 7/3/2018 14:50" } }
