@@ -1,6 +1,8 @@
 {
 	"class" : {
 		"type" : "AR 6/10/2018 17:57",
-		"withStandardValues" : "AR 6/10/2018 17:58" },
+		"withStandardValues" : "ek 7/5/2018 22:55" },
 	"instance" : {
-		 } }
+		"initialize" : "ek 7/5/2018 22:40",
+		"keyActionMapping" : "ek 7/5/2018 22:40",
+		"keyActionMapping:" : "ek 7/5/2018 22:40" } }

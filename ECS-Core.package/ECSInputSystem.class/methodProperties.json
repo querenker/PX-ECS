@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"actions" : "ek 7/5/2018 23:05",
 		"withEntityManager:inputSubject:" : "AR 6/9/2018 19:35" },
 	"instance" : {
 		"getCharacterForKey:" : "ek 7/1/2018 23:37",
@@ -13,5 +14,11 @@
 		"keys:" : "ek 7/1/2018 23:30",
 		"lastEvent" : "AR 6/9/2018 19:41",
 		"lastEvent:" : "AR 6/9/2018 19:41",
+		"move:into:" : "ek 7/5/2018 23:04",
+		"moveDown:" : "ek 7/5/2018 22:59",
+		"moveLeft:" : "ek 7/5/2018 23:00",
+		"moveRight:" : "ek 7/5/2018 23:00",
+		"moveUp:" : "ek 7/5/2018 23:00",
+		"nothing:" : "ek 7/5/2018 23:04",
 		"supportedPlatformDict" : "ek 7/1/2018 23:28",
-		"update" : "ek 7/1/2018 23:43" } }
+		"update" : "ek 7/5/2018 22:56" } }

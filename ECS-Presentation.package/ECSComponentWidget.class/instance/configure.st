@@ -10,6 +10,9 @@ configure
 	self cardNameWidget
 		add:(PHLabel subHeading: self component className)
 		oppositeTo: removeButton.
+		
+	(component className asString asLowercase includesSubstring: 'input') ifTrue: [self configureForInputComponent.
+		^ self].
 	
 	widgetPage := PHPage column.
 	
