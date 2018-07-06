@@ -4,12 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "ek 6/8/2018 22:42",
+	"commentStamp" : "",
 	"instvars" : [
-		"componentStore",
-		"deleteComponentFromEntitySchedule",
-		"eventManager" ],
-	"name" : "ECSEntityManager",
+		"events" ],
+	"name" : "ECSEventManager",
 	"pools" : [
 		 ],
 	"super" : "Object",

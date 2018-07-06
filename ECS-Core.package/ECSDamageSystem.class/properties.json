@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSDamageSystem",
+	"pools" : [
+		 ],
+	"super" : "ECSSystem",
+	"type" : "normal" }

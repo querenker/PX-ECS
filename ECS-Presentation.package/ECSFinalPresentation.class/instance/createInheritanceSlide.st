@@ -4,7 +4,7 @@ createInheritanceSlide
 	| content entityBody entityCard entityContent entityHeader dwarfCard dwarfWizardCard wizardCard wizardBody wizardContent wizardHeader dwarfBody dwarfContent dwarfHeader dwarfWizardBody dwarfWizardContent dwarfWizardHeader |
 	content := PHWidget new
 		withLayout;
-		expand: true.
+		align: #(center center).
 	
 	entityContent := (PHWidget new
 		withLayout;
@@ -112,6 +112,7 @@ createInheritanceSlide
 			
 	content
 		add: (PHPage row
+			align: #(center center);
 			add: (PHWidget new minSize: (500@100) withScalingFactor );
 			"add: PHWidget spacer;"
 			add: (PHPage column

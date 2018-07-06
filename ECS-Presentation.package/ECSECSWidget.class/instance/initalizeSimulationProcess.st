@@ -2,6 +2,7 @@ initialization
 initalizeSimulationProcess
 
 	self simulationProcess: [[true] whileTrue:[
+			self entityManager eventManager clearEvents.
 			self entityManager deleteAllScheduledComponentsFromEntities.
 			self configureUIElementsIfNeeded.
 			self systems do: [:each | each updateIfEnabled].
