@@ -11,4 +11,5 @@ initializeECS
 			add: (ECSResolveCollisionSystem with: self entityManager);
 			add: (ECSDamageSystem with: self entityManager);
 			add: (ECSHealthSystem with: self entityManager);
+			add: (ECSShootSystem with: self entityManager);
 			yourself).
