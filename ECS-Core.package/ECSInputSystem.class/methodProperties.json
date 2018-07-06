@@ -3,7 +3,7 @@
 		"actions" : "ek 7/5/2018 23:05",
 		"withEntityManager:inputSubject:" : "AR 6/9/2018 19:35" },
 	"instance" : {
-		"getCharacterForKey:" : "ek 7/1/2018 23:37",
+		"getCharacterForKey:" : "AR 7/6/2018 09:01",
 		"handlesKeyboard:" : "AR 6/10/2018 17:52",
 		"initialize" : "ek 7/1/2018 23:31",
 		"initializeKeyLookupLinux" : "ek 7/1/2018 23:28",
@@ -21,4 +21,4 @@
 		"moveUp:" : "ek 7/5/2018 23:00",
 		"nothing:" : "ek 7/5/2018 23:04",
 		"supportedPlatformDict" : "ek 7/1/2018 23:28",
-		"update" : "ek 7/5/2018 22:56" } }
+		"update" : "AR 7/6/2018 09:18" } }
