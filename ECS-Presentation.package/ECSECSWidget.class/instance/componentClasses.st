@@ -9,4 +9,5 @@ componentClasses
 		add: ECSInputComponent;
 		add: ECSPictureComponent;
 		add: ECSHealthComponent;
+		add: ECSBurnComponent;
 		yourself

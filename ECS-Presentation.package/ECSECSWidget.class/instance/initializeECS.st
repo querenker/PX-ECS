@@ -12,4 +12,6 @@ initializeECS
 			add: (ECSDamageSystem with: self entityManager);
 			add: (ECSHealthSystem with: self entityManager);
 			add: (ECSShootSystem with: self entityManager);
+			add: (ECSInflameSystem with: self entityManager);
+			add: (ECSBurnSystem with: self entityManager);
 			yourself).
