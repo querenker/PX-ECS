@@ -10,5 +10,5 @@ createTask3Slide
 		add: PHWidget spacer.
 		
 	^ ECSSlideWithTitle
-		title: 'Task 3: Toggling systems'
+		title: 'Encapsulated Behavior and Debugging'
 		content: (PHWidget new withLayout ; add: content)

@@ -10,5 +10,5 @@ createTask2Slide
 		add: PHWidget spacer.
 		
 	^ ECSSlideWithTitle
-		title: 'Task 2: Creating your own components and systems'
+		title: 'Creating your own components and systems'
 		content: (PHWidget new withLayout ; add: content)

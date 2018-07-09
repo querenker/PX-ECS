@@ -16,10 +16,10 @@ initialize
 		addSlide: self createTask1Slide;
 		addSlide: self createTask2Slide;
 		addSlide: self createArchitectureSlide;
-		addSlide: self createSequenceSlide;
+		addSlide: self createMinimalGameSlide;
 		addSlide: self createPerformanceSlide;
 		addSlide: self createTask3Slide;
-		addSlide: self createMinimalGameSlide;
+		addSlide: self createEventHandlingSlide;
 		addSlide: self createSummarySlide;
 		addSlide: self createFinalSlide.
 		
