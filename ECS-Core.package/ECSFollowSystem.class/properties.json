@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"spawnFrequency",
-		"followId" ],
-	"name" : "ECSSpawnComponent",
+		 ],
+	"name" : "ECSFollowSystem",
 	"pools" : [
 		 ],
-	"super" : "ECSComponent",
+	"super" : "ECSSystem",
 	"type" : "normal" }

@@ -11,4 +11,5 @@ componentClasses
 		add: ECSHealthComponent;
 		add: ECSBurnComponent;
 		add: ECSSpawnComponent;
+		add: ECSFollowComponent;
 		yourself
