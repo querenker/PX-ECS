@@ -15,8 +15,9 @@ initialize
 		addSlide: self createInheritanceSlide1;
 		addSlide: self createInheritanceSlide2;
 		addSlide: self createInheritanceSlide3;
-		addSlide: self createAttributeOrgaSlide;
-		addSlide: self createSystemSlide;
+		addSlide: self createEcToEcsSlide1;
+		addSlide: self createEcToEcsSlide2;
+		addSlide: self createEcToEcsSlide3;
 		addSlide: self createECSNameSlide;
 		"Our Tool and ECS Architecture part"
 		addSlide: self createTask1Slide;
