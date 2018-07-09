@@ -31,6 +31,7 @@ initialize
 		addSlide: self createTask3Slide;
 		addSlide: self createSerializationSlide;
 		addSlide: self createEventHandlingSlide;
+		addSlide: self createIndirectionSlide;
 		"Summary + Questions"
 		addSlide: self createSummarySlide;
 		addSlide: self createFinalSlide.
