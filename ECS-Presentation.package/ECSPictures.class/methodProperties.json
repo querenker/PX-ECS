@@ -1,8 +1,16 @@
 {
 	"class" : {
 		"architecture" : "AR 7/3/2018 15:52",
+		"burning" : "ek 7/9/2018 10:44",
+		"bush" : "ek 7/9/2018 10:45",
+		"dwarf" : "ek 7/9/2018 10:43",
+		"dwarfWizard" : "ek 7/9/2018 10:43",
+		"fireball" : "ek 7/9/2018 10:45",
+		"monster" : "ek 7/9/2018 10:43",
 		"performanceSlide" : "ek 7/1/2018 20:34",
 		"sequence" : "AR 7/3/2018 16:24",
-		"systemSlide" : "AR 7/3/2018 21:04" },
+		"stonewall" : "ek 7/9/2018 10:45",
+		"systemSlide" : "AR 7/3/2018 21:04",
+		"wizard" : "ek 7/9/2018 10:44" },
 	"instance" : {
 		 } }
