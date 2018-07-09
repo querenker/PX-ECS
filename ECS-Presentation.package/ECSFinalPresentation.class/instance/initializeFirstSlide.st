@@ -19,6 +19,6 @@ initializeFirstSlide
 			add: ((PHLabel text: 'Prof. Dr. Robert Hirschfeld, Jens Lincke, Stefan Ramson')
 				align: #(center center);
 				pointSize: 40);
-			add: ((PHLabel text: '11. July 2018 - Summer term 2018 - Hasso Plattner Institute - Software Architectures Group')
+			add: ((PHLabel text: '11 July 2018 - Summer term 2018 - Hasso Plattner Institute - Software Architectures Group')
 				align: #(center center);
 				pointSize: 40))
