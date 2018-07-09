@@ -24,7 +24,10 @@ initialize
 		addSlide: self createArchitectureSlide;
 		addSlide: self createMinimalGameSlide;
 		"Advantages and Disadvantages"
-		addSlide: self createPerformanceSlide;
+		addSlide: self createPerformanceSlide1;
+		addSlide: self createPerformanceSlide2;
+		addSlide: self createPerformanceSlide3;
+		addSlide: self createPerformanceSlide4;
 		addSlide: self createTask3Slide;
 		addSlide: self createEventHandlingSlide;
 		"Summary + Questions"
