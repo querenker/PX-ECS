@@ -2,7 +2,7 @@ UI
 openInputChooserFor: keyActionMapping
 
 	| dialog keyTextArea actionTextArea actionDropdownButton dropdown |
-	dialog := PHDialog new.
+	dialog := ECSPHDialog new.
 	keyTextArea := PHTextArea placeholder: 'enter key'.
 	actionTextArea := PHTextArea placeholder: 'enter action'.
 	actionDropdownButton := PHButton label: 'Actions'.
@@ -36,4 +36,4 @@ openInputChooserFor: keyActionMapping
 	" opening a dialog returns a promise that can be rejected/accepted with PHDialog>>accept:/cancel: Closing the dialog cancel:'s "
 	(dialog openFor: self)
 		then: [keyActionMapping at: keyTextArea text asCharacter put: actionTextArea text asSymbol];
-		ifRejected: [self topLevel displayNotification: 'No key->action' asString type: #danger]
+		ifRejected: ["self topLevel displayNotification: 'No key->action' asString type: #danger"]

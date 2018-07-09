@@ -2,7 +2,7 @@ UI Building
 openRenameEntityDialog
 
 	| dialog textArea |
-	dialog := PHDialog new.
+	dialog := ECSPHDialog new.
 	textArea := PHTextArea placeholder: 'enter name'.
 	
 	dialog content: (PHPage new
@@ -19,4 +19,4 @@ openRenameEntityDialog
 	(dialog openFor: self)
 		then: [self showComponentsFor: (self currentEntity name: textArea text).
 			self chooseEntityButton shouldBeUpdated: true];
-		ifRejected: [self topLevel displayNotification: 'Entity not renamed' asString type: #danger]
+		ifRejected: ["self topLevel displayNotification: 'Entity not renamed' asString type: #danger"]
