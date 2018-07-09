@@ -3,22 +3,16 @@ createSummarySlide
 
 	^ ECSSlideWithTitle
 		title: 'Summary'
-		content: (PHWidget new
-			withLayout;
-			align: #(center center);
-			add: (PHPage row
-				expand: true;
-				add: ((PHLabel markup: '<b><span color="#060">Advantages</span></b>',
-										String cr, String cr,
-										' - decouples multiple domains', String cr,
-										' - simplifies code reuse', String cr,
-										' - data-oriented design', String cr,
-										' - multi-threaded design')
-					pointSize: 80;
-					align: #(center center));
-				add: ((PHLabel markup: '<b><span color="#600">Disadvantages</span></b>',
-										String cr, String cr,
-										' - adds indirection (complexity)', String cr,
-										' - inter system communication')
-					pointSize: 80;
-					align: #(center center)))).
+		content: (PHPage column
+			add: ((PHLabel text: 'An Entity Component System (ECS)')
+				pointSize: 45);
+			add: ((PHLabel text: '- consists of entities (identities), components (basic data) and systems (behaviour)')
+				pointSize: 45);
+			add: ((PHLabel text: '- has to be combined with other patterns for certain use cases')
+				pointSize: 45);
+			add: ((PHLabel text: '- prevents diamond of death')
+				pointSize: 45);
+			add: (PHImage new
+				align: #(center center);
+				framed: false;
+				form: ECSPictures ecsNameSlideVisual))
