@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"teleportArea" ],
+	"name" : "ECSTeleportComponent",
+	"pools" : [
+		 ],
+	"super" : "ECSComponent",
+	"type" : "normal" }

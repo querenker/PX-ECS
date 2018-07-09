@@ -12,4 +12,5 @@ componentClasses
 		add: ECSBurnComponent;
 		add: ECSSpawnComponent;
 		add: ECSFollowComponent;
+		add: ECSTeleportComponent;
 		yourself

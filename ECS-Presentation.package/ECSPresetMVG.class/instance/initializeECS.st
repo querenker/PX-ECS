@@ -12,8 +12,10 @@ initializeECS
 	player addComponent: ECSMotionComponent withStandardValues.
 	player addComponent: ECSInputComponent withStandardValues.
 	player addComponent: ECSShootComponent withStandardValues.
+	player addComponent: ECSTeleportComponent withStandardValues.
 	player pictureComponent picturePath: (FileDirectory default pathName,  '/wizard.png').
 	player positionComponent position: 200@200.
+	player teleportComponent teleportArea: 750@400.
 	
 	spawn := self addEntityNamed: 'Spawn'.
 	spawn addComponent: ECSPositionComponent withStandardValues.
