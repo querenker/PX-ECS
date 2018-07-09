@@ -6,9 +6,9 @@ createECSNameSlide
 		add: (PHPage column
 			expand: true;
 			align: #(center center);
-			add: ((PHLabel markup: '<b>E</b>  ntities group together components', String cr,
-									 '<b>C</b>  omponents contain data', String cr,
-									 '<b>S</b>  ystems contain behavior')
+			add: ((PHLabel markup: '<i>E</i> ntities group together components', String cr,
+									 '<i>C</i> omponents contain data', String cr,
+									 '<i>S</i> ystems contain behavior')
 				pointSize: 80;
 				align: #(center center));
 			add: (PHImage new
