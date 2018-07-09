@@ -13,4 +13,5 @@ createECSNameSlide
 				align: #(center center));
 			add: (PHImage new
 				align: #(center center);
+				framed: false;
 				form: ECSPictures ecsNameSlideVisual)).

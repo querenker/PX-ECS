@@ -9,4 +9,5 @@ createEventHandlingSlide
 			expand: true;
 			add: (PHImage new
 				align: #(center center);
+				framed: false;
 				form: ECSPictures sequence))

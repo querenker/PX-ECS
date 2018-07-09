@@ -9,4 +9,5 @@ createArchitectureSlide
 			expand: true;
 			add: (PHImage new
 				align: #(center center);
+				framed: false;
 				form: ECSPictures architectureV2))

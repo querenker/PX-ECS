@@ -7,5 +7,6 @@ createInheritanceSlide2
 			add: PHWidget spacer;
 			add: (PHImage new
 				align: #(center center);
+				framed: false;
 				form: ECSPictures inheritanceSlide2);
 			add: PHWidget spacer)

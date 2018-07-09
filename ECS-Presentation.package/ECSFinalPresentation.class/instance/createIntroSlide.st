@@ -14,4 +14,5 @@ createIntroSlide
 				pointSize: 45);
 			add: (PHImage new
 				align: #(center center);
+				framed: false;
 				form: ECSPictures introSlideGameExample))
