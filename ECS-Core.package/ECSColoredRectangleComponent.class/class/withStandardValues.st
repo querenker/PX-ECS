@@ -5,5 +5,5 @@ withStandardValues
 	instance := self new.
 	instance
 		color: Color orange;
-		extent: 42@42.
+		extent: 50@50.
 	^ instance

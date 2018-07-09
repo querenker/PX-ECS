@@ -5,5 +5,5 @@ update
 		| entity otherEntity |
 		entity := event at: #entity1.
 		otherEntity := event at: #entity2.
-		((entity collisionComponent collisionTag == #deadly) and: [otherEntity hasComponentOfType: #health]) ifTrue: [
+		((entity collisionComponent collisionTags contains: [:x | x == #deadly]) and: [otherEntity hasComponentOfType: #health]) ifTrue: [
 				otherEntity healthComponent health: otherEntity healthComponent health - 1]]

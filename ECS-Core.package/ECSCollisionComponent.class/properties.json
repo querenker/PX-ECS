@@ -7,7 +7,7 @@
 	"commentStamp" : "ek 6/8/2018 22:44",
 	"instvars" : [
 		"collisionBoundary",
-		"collisionTag" ],
+		"collisionTags" ],
 	"name" : "ECSCollisionComponent",
 	"pools" : [
 		 ],

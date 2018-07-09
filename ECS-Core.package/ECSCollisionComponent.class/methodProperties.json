@@ -1,9 +1,9 @@
 {
 	"class" : {
 		"type" : "AR 6/1/2018 18:57",
-		"withStandardValues" : "AR 6/3/2018 15:56" },
+		"withStandardValues" : "AR 7/9/2018 14:54" },
 	"instance" : {
 		"collisionBoundary" : "AR 6/1/2018 15:27",
 		"collisionBoundary:" : "AR 6/1/2018 15:27",
-		"collisionTag" : "AR 7/2/2018 12:40",
-		"collisionTag:" : "AR 7/2/2018 12:40" } }
+		"collisionTags" : "AR 7/9/2018 14:48",
+		"collisionTags:" : "AR 7/9/2018 14:48" } }

@@ -5,5 +5,5 @@ update
 		| entity otherEntity |
 		entity := event at: #entity1.
 		otherEntity := event at: #entity2.
-		((entity collisionComponent collisionTag == #fire) and: [otherEntity hasComponentOfType: #burn]) ifTrue: [
+		((entity collisionComponent collisionTags contains: [:x | x == #fire]) and: [otherEntity hasComponentOfType: #burn]) ifTrue: [
 				otherEntity burnComponent isBurning: true]]
