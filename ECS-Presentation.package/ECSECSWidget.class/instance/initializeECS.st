@@ -16,4 +16,5 @@ initializeECS
 			add: (ECSBurnSystem with: self entityManager);
 			add: (ECSSpawnSystem with: self entityManager);
 			add: (ECSFollowSystem with: self entityManager);
+			add: (ECSCooldownSystem with: self entityManager);
 			yourself).

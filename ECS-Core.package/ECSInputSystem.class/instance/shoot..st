@@ -2,7 +2,9 @@ actions
 shoot: anEntity
 	
 	| direction spawnRectangle spawnPoint directionToSpawnPoint |
-	(anEntity hasComponentOfType: #position) ifFalse: [^ self].
+	((anEntity hasComponentOfType: #position) and: [anEntity hasComponentOfType: #shoot]) ifFalse: [^ self].
+	(anEntity shootComponent cooldown > 0) ifTrue: [^ self].
+	anEntity shootComponent cooldown: 50.
 	direction := (anEntity hasComponentOfType: #motion) ifTrue: [anEntity motionComponent velocity] ifFalse: [0@0].
 	spawnRectangle := (anEntity hasComponentOfType: #collision)
 		ifTrue: [anEntity collisionComponent collisionBoundary translateBy: anEntity positionComponent position]

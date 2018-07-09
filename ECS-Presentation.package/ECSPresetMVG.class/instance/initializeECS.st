@@ -11,6 +11,7 @@ initializeECS
 	player addComponent: ECSCollisionComponent withStandardValues.
 	player addComponent: ECSMotionComponent withStandardValues.
 	player addComponent: ECSInputComponent withStandardValues.
+	player addComponent: ECSShootComponent withStandardValues.
 	player pictureComponent picturePath: (FileDirectory default pathName,  '/wizard.png').
 	player positionComponent position: 200@200.
 	
