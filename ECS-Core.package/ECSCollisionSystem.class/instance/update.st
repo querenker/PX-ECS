@@ -10,5 +10,5 @@ update
 			| intersection |
 			otherTranslatedCollisionBoundary := otherEntity collisionComponent collisionBoundary translateBy: otherEntity positionComponent position.
 			intersection := (translatedCollisionBoundary intersect: otherTranslatedCollisionBoundary).
-			(intersection area > 0) ifTrue: [
+			(intersection area > 0 and: [entity entityId ~= otherEntity entityId]) ifTrue: [
 				self entityManager eventManager addEvent: (Dictionary newFrom: {#entity1 -> entity . #entity2 -> otherEntity . #intersection -> intersection}) ofTyp: #collision]]]
