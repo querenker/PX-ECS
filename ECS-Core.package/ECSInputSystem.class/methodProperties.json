@@ -4,7 +4,7 @@
 		"withEntityManager:inputSubject:" : "AR 6/9/2018 19:35" },
 	"instance" : {
 		"getCharacterForKey:" : "AR 7/6/2018 09:01",
-		"handlesKeyboard:" : "AR 7/9/2018 15:37",
+		"handlesKeyboard:" : "ek 7/9/2018 15:33",
 		"initialize" : "ek 7/1/2018 23:31",
 		"initializeKeyLookupLinux" : "ek 7/1/2018 23:28",
 		"initializeKeyLookupMac" : "ek 7/1/2018 23:27",

@@ -7,5 +7,5 @@ withStandardValues
 	instance keyActionMapping at: Character arrowDown put: #moveDown.
 	instance keyActionMapping at: Character arrowLeft put: #moveLeft.
 	instance keyActionMapping at: Character arrowRight put: #moveRight.
-	instance keyActionMapping at: Character tab put: #shoot.
+	instance keyActionMapping at:  $m put: #shoot.
 	^ instance
