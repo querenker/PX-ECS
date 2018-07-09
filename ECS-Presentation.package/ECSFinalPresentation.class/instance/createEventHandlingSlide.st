@@ -1,8 +1,8 @@
 initialize-release
-createSequenceSlide
+createEventHandlingSlide
 
 	^ ECSSlideWithTitle
-		title: 'Sequence'
+		title: 'Event Handling'
 		content: (PHWidget new
 			withLayout;
 			align: #(center center);

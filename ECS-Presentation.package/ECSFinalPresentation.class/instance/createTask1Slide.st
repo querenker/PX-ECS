@@ -10,5 +10,5 @@ createTask1Slide
 		add: PHWidget spacer.
 		
 	^ ECSSlideWithTitle
-		title: 'Task 1: Working with premade components and systems'
+		title: 'Working with premade components and systems'
 		content: (PHWidget new withLayout ; add: content)
