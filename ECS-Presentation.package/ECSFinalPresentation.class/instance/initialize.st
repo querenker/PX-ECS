@@ -29,6 +29,7 @@ initialize
 		addSlide: self createPerformanceSlide3;
 		addSlide: self createPerformanceSlide4;
 		addSlide: self createTask3Slide;
+		addSlide: self createSerializationSlide;
 		addSlide: self createEventHandlingSlide;
 		"Summary + Questions"
 		addSlide: self createSummarySlide;
