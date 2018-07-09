@@ -5,5 +5,7 @@ update
 	entities := self entityManager entitiesWithComponentsOfTypes: #(follow position motion).
 	entities do: [:entity |
 		| followPosition |
-		followPosition := (self entityManager componentOfType: #position for: entity followComponent followId) position.
-		entity motionComponent velocity: ((followPosition - (entity positionComponent position)) normalized).]
+		(self entityManager componentOfType: #position for: entity followComponent followId) ifNotNilDo:
+			[ :followedEntityPositionComponent |
+			followPosition := followedEntityPositionComponent position.
+			entity motionComponent velocity: ((followPosition - (entity positionComponent position)) normalized)]]
