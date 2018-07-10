@@ -2,7 +2,7 @@ initialize-release
 createEcToEcsSlide2
 
 	^ ECSSlideWithTitle
-		title: 'Entity Component Pattern'
+		title: 'Composition'
 		content: (PHPage column
 			add: PHWidget spacer;
 			add: (PHImage new
