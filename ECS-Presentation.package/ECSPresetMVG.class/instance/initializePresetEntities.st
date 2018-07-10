@@ -1,8 +1,8 @@
 as yet unclassified
-initializeECS
+initializePresetEntities
 
 	| player dwarf spawn1 spawn2 bush block1 block2 block3 block4 block5 bush2 bush3 |
-	super initializeECS.
+	super initializePresetEntities.
 	
 	player := self addEntityNamed: 'Mage'.
 	player addComponent: ECSPositionComponent withStandardValues.

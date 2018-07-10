@@ -2,6 +2,7 @@ initialization
 initalizeSimulationProcess
 
 	self simulationProcess: [[true] whileTrue:[
+			self shouldReset ifTrue: [self resetSimulation. self shouldReset: false].
 			self entityManager eventManager clearEvents.
 			self entityManager deleteAllScheduledComponentsFromEntities.
 			self configureUIElementsIfNeeded.

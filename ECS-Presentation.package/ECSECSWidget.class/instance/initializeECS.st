@@ -20,3 +20,5 @@ initializeECS
 			add: (ECSTeleportSystem with: self entityManager);
 			add: (ECSDestroySystem with: self entityManager);
 			yourself).
+			
+	self initializePresetEntities

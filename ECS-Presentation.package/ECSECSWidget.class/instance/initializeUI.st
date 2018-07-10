@@ -1,6 +1,8 @@
 initialization
 initializeUI
 
+	self toggleSystemSidebar: self createSystemToggleSidebar.
+
 	self
 		withLayout;
 		vertical: true;
@@ -8,7 +10,7 @@ initializeUI
 		expand: true;
 		add: (PHPage row
 			expand: true;
-			add: (self createSystemToggleSidebar);
+			add: self toggleSystemSidebar;
 			add: (PHPage column
 				expand: true;
 				add: (PHPage row

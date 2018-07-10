@@ -24,7 +24,9 @@
 		"createSystemButton",
 		"systemSidebar",
 		"createComponentButton",
-		"simulationResetButton" ],
+		"simulationResetButton",
+		"shouldReset",
+		"toggleSystemSidebar" ],
 	"name" : "ECSECSWidget",
 	"pools" : [
 		 ],
