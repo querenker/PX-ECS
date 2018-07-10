@@ -3,4 +3,4 @@ componentTypTemplate
 
 	^ 'type
 	
-	^ #customType'
+	^ #path'
