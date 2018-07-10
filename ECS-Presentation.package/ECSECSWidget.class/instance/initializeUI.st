@@ -17,6 +17,4 @@ initializeUI
 					add: (ECSMorphContainer with: self simulationIndicator));
 				add: self createPlaygroundContainer;
 				add: self entitySidebar);
-			add: (PHPage column
-					add: self componentSidebar;
-					add: self createCreateComponentButton))
+			add: self componentSidebar)

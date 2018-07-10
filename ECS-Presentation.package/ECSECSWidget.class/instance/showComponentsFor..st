@@ -9,7 +9,9 @@ showComponentsFor: anEntity
 		add: (PHPage row
 			add: self createComponentsForEntityLabel
 			oppositeTo: self createRenameCurrentEntityButton);
-		add: self addComponentToEntityButton;
+		add: (PHPage column
+				add: self addComponentToEntityButton;
+				add: self createCreateComponentButton);
 		add: (PHScrollArea new
 			policy: #(show scroll);
 			content: self componentsForEntityWidget).
