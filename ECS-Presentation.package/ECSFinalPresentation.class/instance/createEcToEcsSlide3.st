@@ -2,7 +2,7 @@ initialize-release
 createEcToEcsSlide3
 
 	^ ECSSlideWithTitle
-		title: 'Entity Component Pattern - Introducing Systems'
+		title: 'Introducing Systems'
 		content: (PHPage column
 			add: PHWidget spacer;
 			add: (PHImage new

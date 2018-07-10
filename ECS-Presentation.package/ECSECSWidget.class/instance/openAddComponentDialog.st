@@ -2,7 +2,7 @@ UI Building
 openAddComponentDialog
 
 	| dialog componentNameTextArea componentFieldHolder |
-	dialog := PHDialog new.
+	dialog := ECSPHDialog new.
 	componentNameTextArea := PHTextArea placeholder: 'enter name'.
 	componentFieldHolder := ECSComponentFieldHolder new.
 	

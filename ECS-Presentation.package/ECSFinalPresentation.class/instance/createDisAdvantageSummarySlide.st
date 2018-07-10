@@ -14,11 +14,11 @@ createDisAdvantageSummarySlide
 										' - simplifies code reuse', String cr,
 										' - data-oriented design', String cr,
 										' - multi-threaded design')
-					pointSize: 80;
-					align: #(center center));
+					pointSize: 45;
+					align: #(center start));
 				add: ((PHLabel markup: '<b><span color="#600">Disadvantages</span></b>',
 										String cr, String cr,
 										' - adds indirection (complexity)', String cr,
 										' - inter system communication')
-					pointSize: 80;
-					align: #(center center)))).
+					pointSize: 45;
+					align: #(center start)))).

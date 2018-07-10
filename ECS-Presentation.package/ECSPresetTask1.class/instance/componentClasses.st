@@ -5,7 +5,7 @@ componentClasses
 		"add: ECSColoredRectangleComponent;"
 		add: ECSPositionComponent;
 		add: ECSMotionComponent;
-		add: ECSCollisionComponent;
-		add: ECSInputComponent;
+		"add: ECSCollisionComponent;"
+		"add: ECSInputComponent;"
 		add: ECSPictureComponent;
 		yourself

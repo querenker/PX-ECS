@@ -8,6 +8,6 @@ initializeECS
 			"add: (ECSDebugCollisionSystem withEntityManager: self entityManager drawSurface: self playground);
 			add: (ECSDebugPositionSystem withEntityManager: self entityManager drawSurface: self playground);"
 			add: (ECSMovementSystem with: self entityManager);
-			add: (ECSInputSystem withEntityManager: self entityManager inputSubject: self);
-			add: (ECSCollisionSystem with: self entityManager);
+			"add: (ECSInputSystem withEntityManager: self entityManager inputSubject: self);"
+			"add: (ECSCollisionSystem with: self entityManager);"
 			yourself).
