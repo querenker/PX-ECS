@@ -13,10 +13,17 @@ update
 			surface fillRectangle: (entity positionComponent position extent: entity coloredRectangleComponent extent) color: entity coloredRectangleComponent color]].
 	
 	entitiesWithPictures do: [:entity |
-		self drawCommands add: [:surface | | form |
-			entity pictureComponent picturePath ifNotNilDo:  [ :filePath | 
-				form := self getFormFor: filePath. 
-				surface drawImage: form at: entity positionComponent position]]].
+		entity pictureComponent picturePath ifNotNilDo:  [ :filePath |
+			(filePath asLowercase includesSubstring: 'png')
+				ifTrue: [ self drawCommands
+					add: [:surface | | form |
+						form := self getFormFor: filePath. 
+						surface drawImage: form at: entity positionComponent position]]
+				ifFalse: [(ECSPictures preloadedPictureIdentifiers includes: filePath asSymbol)
+					ifTrue:[ self drawCommands
+						add: [:surface | | form |
+							form := ECSPictures perform: filePath asSymbol. 
+							surface drawImage: form at: entity positionComponent position]]]]].
 	
 	entitiesWithPreloadedPictures do: [:entity |
 		(ECSPictures preloadedPictureIdentifiers includes: entity preloadedpictureComponent pictureIdentifier) ifTrue:[

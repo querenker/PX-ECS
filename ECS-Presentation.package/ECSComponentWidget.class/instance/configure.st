@@ -25,10 +25,13 @@ configure
 		label := PHLabel text: instVarName.
 		textArea := PHTextArea new text: (self component perform: instVarName asSymbol) asString.
 		instVarSetter := instVarName, ':'.
-
 		textArea
 		when: #confirmed
-		evaluate: [:x | component perform: instVarSetter asSymbol with: (Compiler evaluate: textArea text)].
+		evaluate: [:x | | newValue |
+			(Compiler evaluate: textArea text)
+			ifNil: [newValue := textArea text] 
+			 ifNotNilDo: [:result | newValue := result].
+			 component perform: instVarSetter asSymbol with: newValue].
 		
 		instVarPage := PHPage row.
 		
