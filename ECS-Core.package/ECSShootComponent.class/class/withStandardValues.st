@@ -1,4 +1,4 @@
 as yet unclassified
 withStandardValues
 
-	^ self new cooldown: 200
+	^ self new cooldown: 0

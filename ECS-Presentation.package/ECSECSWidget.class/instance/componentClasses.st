@@ -8,10 +8,11 @@ componentClasses
 		add: ECSCollisionComponent;
 		add: ECSInputComponent;
 		add: ECSPictureComponent;
-		add: ECSPreloadedpictureComponent;
+		"add: ECSPreloadedpictureComponent;"
 		add: ECSHealthComponent;
 		add: ECSBurnComponent;
 		add: ECSSpawnComponent;
 		add: ECSFollowComponent;
 		add: ECSTeleportComponent;
+		add: ECSShootComponent;
 		yourself
