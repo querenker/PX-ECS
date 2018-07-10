@@ -2,7 +2,7 @@ initialization
 initializeECS
 
 	self
-		entityManager: ECSEntityManager new;
+		entityManager: (ECSToolEntityManager withWidget: self);
 		systems: (OrderedCollection new
 			add: (ECSRenderingSystem withEntityManager: self entityManager drawSurface: self playground);
 			add: (ECSMovementSystem with: self entityManager);
