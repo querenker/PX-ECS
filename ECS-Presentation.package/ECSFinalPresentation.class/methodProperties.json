@@ -2,7 +2,7 @@
 	"class" : {
 		"configureFont" : "ek 5/31/2018 10:30",
 		"open" : "ek 5/22/2018 17:29",
-		"openInPresentationMode" : "ek 5/22/2018 17:29" },
+		"openInPresentationMode" : "ek 7/10/2018 22:39" },
 	"instance" : {
 		"attributeOrgaWidget" : "AR 6/29/2018 12:13",
 		"attributeOrgaWidget:" : "AR 6/29/2018 12:13",
@@ -32,11 +32,12 @@
 		"createTask2Slide" : "ek 7/9/2018 11:47",
 		"createTask3Slide" : "ek 7/9/2018 11:48",
 		"handlesKeyboard:" : "ek 7/1/2018 23:45",
-		"initialize" : "ek 7/10/2018 14:03",
+		"initialize" : "ek 7/10/2018 22:40",
 		"initializeFirstSlide" : "ek 7/9/2018 13:47",
 		"keyDown:" : "ek 7/1/2018 23:51",
 		"keyMapping" : "ek 7/1/2018 23:54",
 		"keyUp:" : "ek 7/1/2018 23:56",
 		"outOfWorld:" : "ek 7/10/2018 00:36",
 		"spacePressed" : "ek 7/1/2018 23:55",
-		"spacePressed:" : "ek 7/1/2018 23:55" } }
+		"spacePressed:" : "ek 7/1/2018 23:55",
+		"wantsToBeDroppedInto:" : "ek 7/10/2018 22:44" } }
