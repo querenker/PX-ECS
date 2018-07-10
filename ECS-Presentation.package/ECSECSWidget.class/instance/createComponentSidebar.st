@@ -5,5 +5,5 @@ createComponentSidebar
 		withLayout;
 		expand: true;
 		addStyleClass: #withPadding;
-		color: Color lightGray;
+		color: Color lightGray lighter;
 		add: self createEmptyComponentsForEntityLabel
