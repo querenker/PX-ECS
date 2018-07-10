@@ -9,5 +9,5 @@ createComponent: aComponentName withFields: componentFields
 	defaultValueSetter := componentFields collect: [:componentField |
 		'instance {1}: {2}.' format: componentField].
 	componentClass class compile: (self componentConstructorTemplate format: { defaultValueSetter inject: '' into: [:el :result | result , ' ', el]}).
-	componentClass class compile: self componentTypTemplate. 
+	componentClass class compile: self componentTypeTemplate. 
 	^ componentClass

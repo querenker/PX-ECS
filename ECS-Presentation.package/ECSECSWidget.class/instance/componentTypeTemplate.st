@@ -1,5 +1,5 @@
 ECS Logic
-componentTypTemplate
+componentTypeTemplate
 
 	^ 'type
 	
