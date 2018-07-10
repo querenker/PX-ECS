@@ -18,4 +18,5 @@ initializeECS
 			add: (ECSFollowSystem with: self entityManager);
 			add: (ECSCooldownSystem with: self entityManager);
 			add: (ECSTeleportSystem with: self entityManager);
+			add: (ECSDestroySystem with: self entityManager);
 			yourself).
