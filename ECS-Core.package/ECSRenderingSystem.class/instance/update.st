@@ -1,9 +1,10 @@
 as yet unclassified
 update
 	
-	| entitiesWithColoredRectangles entitiesWithPictures |
+	| entitiesWithColoredRectangles entitiesWithPictures entitiesWithPreloadedPictures |
 	entitiesWithColoredRectangles := entityManager entitiesWithComponentsOfTypes: #(#coloredRectangle #position).
 	entitiesWithPictures := entityManager entitiesWithComponentsOfTypes: #(#picture #position).
+	entitiesWithPreloadedPictures := entityManager entitiesWithComponentsOfTypes: #(#preloadedpicture #position).
 	
 	self resetDrawCommands.
 	
@@ -15,6 +16,12 @@ update
 		self drawCommands add: [:surface | | form |
 			entity pictureComponent picturePath ifNotNilDo:  [ :filePath | 
 				form := self getFormFor: filePath. 
+				surface drawImage: form at: entity positionComponent position]]].
+	
+	entitiesWithPreloadedPictures do: [:entity |
+		(ECSPictures preloadedPictureIdentifiers includes: entity preloadedpictureComponent pictureIdentifier) ifTrue:[
+			self drawCommands add: [:surface | | form |
+				form := ECSPictures perform: entity preloadedpictureComponent pictureIdentifier asSymbol. 
 				surface drawImage: form at: entity positionComponent position]]].
 	
 	self drawSurface drawBlock: [:surface |

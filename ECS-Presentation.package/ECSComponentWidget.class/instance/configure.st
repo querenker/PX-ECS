@@ -14,6 +14,10 @@ configure
 	(component className asString asLowercase includesSubstring: 'input') ifTrue: [self configureForInputComponent.
 		^ self].
 	
+	(component className asString asLowercase includesSubstring: 'preloadedpic')
+		ifTrue: [self configureForPreloadedPictureComponent.
+			^ self].
+	
 	widgetPage := PHPage column.
 	
 	self component class allInstVarNames do: [:instVarName | | textArea instVarSetter label instVarPage |
