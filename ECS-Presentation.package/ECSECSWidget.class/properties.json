@@ -23,7 +23,8 @@
 		"keyboardObserver",
 		"createSystemButton",
 		"systemSidebar",
-		"createComponentButton" ],
+		"createComponentButton",
+		"simulationResetButton" ],
 	"name" : "ECSECSWidget",
 	"pools" : [
 		 ],

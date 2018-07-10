@@ -12,6 +12,7 @@ initializeDefaultInstVars
 	self componentSidebar: self createComponentSidebar.
 	self simulationIndicator: self createSimulationIndicator.
 	self simulationButton: self createPlaygroundSimulationButton.
+	self simulationResetButton: self createSimulationResetButton.
 	self createSystemButton: self createCreateSystemButton.
 	self isSimulating: false.
 	self keyboardObserver: OrderedCollection new.
