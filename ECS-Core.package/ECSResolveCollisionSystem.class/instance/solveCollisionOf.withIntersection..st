@@ -3,7 +3,7 @@ solveCollisionOf: aSetOfEntities withIntersection: anIntersection
 
 	| movableEntities |
 	((aSetOfEntities size < 2) or: [anIntersection area = 0]) ifTrue: [^ self].
-	movableEntities := aSetOfEntities select: [:entity | entity hasComponentOfType: #motion].
+	movableEntities := aSetOfEntities select: [:entity | (entity hasComponentOfType: #motion) and: [entity motionComponent velocity ~= (0@0)]].
 	movableEntities do: [:entity |
 		| resolvingDirection movementDelta resolvingSign |
 		resolvingDirection := (anIntersection height < anIntersection width) ifTrue: #y ifFalse: #x.
