@@ -9,7 +9,7 @@ openAddComponentDialog
 	dialog title: 'Add Component'.
 	dialog content: (PHPage new
 		withPadding;
-		add: (componentNameTextArea expand: true);
+		add: (componentNameTextArea);
 		add: (componentFieldHolder);
 		add: ((PHButton text: 'Add field')
 			when: #clicked
