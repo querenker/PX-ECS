@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	self enable.
+	self isEnabled: self isEnabledByDefault

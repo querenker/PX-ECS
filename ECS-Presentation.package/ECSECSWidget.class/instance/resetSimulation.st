@@ -9,6 +9,6 @@ resetSimulation
 	self chooseEntityButton shouldBeUpdated: true.
 	self initializePresetEntities.
 	
-	self systems do: [:system | system enable].
+	self systems do: [:system | system isEnabled: system isEnabledByDefault].
 	
 	self updateSystemToggleSidebar

@@ -29,4 +29,4 @@ openAddComponentDialog
 			| componentClass |
 			componentClass := (self createComponent: componentNameTextArea text withFields: (componentFieldHolder componentFields)).
 			self addComponent: componentClass to: self currentEntity entityId];
-		ifRejected: [self topLevel displayNotification: 'No component created' asString type: #danger]
+		ifRejected: []
