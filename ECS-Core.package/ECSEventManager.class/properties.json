@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "ek 7/26/2018 12:11",
 	"instvars" : [
 		"events" ],
 	"name" : "ECSEventManager",

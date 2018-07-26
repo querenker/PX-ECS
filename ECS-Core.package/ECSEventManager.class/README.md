@@ -1,0 +1,1 @@
+I am the Event Manager, through me systems can notify each other.
