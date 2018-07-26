@@ -1,7 +1,7 @@
 as yet unclassified
 initializePresetEntities
 
-	| player dwarf spawn1 spawn2 bush block1 block2 block3 block4 block5 bush2 bush3 |
+	| player dwarf spawn1 spawn2 bush block1 block2 block3 block4 block5 bush2 bush3 inputDwarf |
 	super initializePresetEntities.
 	
 	player := self addEntityNamed: 'Mage'.
@@ -17,11 +17,19 @@ initializePresetEntities
 	player positionComponent position: 200@200.
 	player teleportComponent teleportArea: 750@400.
 	
+	inputDwarf := ECSInputComponent withStandardValues.
+	inputDwarf keyActionMapping: Dictionary new.
+	inputDwarf keyActionMapping at: $w put: #moveUp.
+	inputDwarf keyActionMapping at: $s put: #moveDown.
+	inputDwarf keyActionMapping at: $a put: #moveLeft.
+	inputDwarf keyActionMapping at: $d put: #moveRight.
+	
 	dwarf := self addEntityNamed: 'Dwarf'.
 	dwarf addComponent: ECSPositionComponent withStandardValues.
 	dwarf addComponent: ECSPictureComponent withStandardValues.
 	dwarf addComponent: ECSHealthComponent withStandardValues.
 	dwarf addComponent: (ECSCollisionComponent withStandardValues collisionTags: #(destroy)).
+	dwarf addComponent: inputDwarf.
 	dwarf pictureComponent picturePath: 'dwarf'.
 	dwarf positionComponent position: 0@400.
 	

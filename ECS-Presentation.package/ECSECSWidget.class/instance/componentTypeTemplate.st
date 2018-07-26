@@ -3,4 +3,4 @@ componentTypeTemplate
 
 	^ 'type
 	
-	^ #path'
+	^ #{1}'
